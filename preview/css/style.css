@@ -24,9 +24,10 @@ html, body {
 #neve-content {
   min-height: 200px;
   padding-bottom: 100px;
+  padding-top: 55px;
   background-color: red; }
 
-/* line 32, stdin */
+/* line 33, stdin */
 #neve-footer {
   width: 100%;
   height: 100px;
@@ -36,11 +37,11 @@ html, body {
   background-color: green; }
 
 @media (max-width: 768px) {
-  /* line 44, stdin */
+  /* line 45, stdin */
   .module {
     background-color: blue; } }
 
 @media only screen and (min-width: 768px) {
-  /* line 44, stdin */
+  /* line 45, stdin */
   .module {
     background-color: pink; } }
