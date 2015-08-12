@@ -28,6 +28,16 @@ gulp.task('clean', function(){
         .pipe(clean());
 });
 
+gulp.task('copy', function(){
+    return gulp.src( [
+        paths.dev + '/js/**/*',
+        paths.dev + '/images/**/*',
+        paths.dev + '/favicon.png',
+
+    ], {'base' : paths.dev })
+        .pipe(gulp.dest(paths.prod));
+});
+
 // fileinclude: grab partials from templates and render out html files
 // ==========================================
 gulp.task('fileinclude', function() {
@@ -71,7 +81,7 @@ gulp.task('html', function () {
 });
 
 gulp.task('connect-reload', function(){
-    runSequence('fileinclude', 'sass', 'html');
+    runSequence('fileinclude', 'sass', 'copy', 'html');
 });
 
 
@@ -86,6 +96,6 @@ gulp.task('watch', function() {
 
 //  Default Gulp Task
 //===========================================
-gulp.task('default', ['fileinclude', 'sass', 'connect', 'watch'], function() {
+gulp.task('default', ['fileinclude', 'sass', 'copy', 'connect', 'watch'], function() {
 
 });
