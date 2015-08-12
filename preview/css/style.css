@@ -15,19 +15,29 @@ html, body {
 #neve-header {
   max-width: 960px;
   margin: auto; }
-  /* line 20, stdin */
+  /* line 23, stdin */
+  #neve-header .navbar-toggle.collapsed .glyphicon-remove {
+    opacity: 0;
+    -webkit-transition: opacity 0.2s;
+            transition: opacity 0.2s; }
+  /* line 29, stdin */
+  #neve-header .navbar-toggle:not(.collapsed) .glyphicon-menu-hamburger {
+    opacity: 0;
+    -webkit-transition: opacity 0.2s;
+            transition: opacity 0.2s; }
+  /* line 36, stdin */
   #neve-header #logo {
     width: 110px;
     height: 53px; }
 
-/* line 26, stdin */
+/* line 42, stdin */
 #neve-content {
   min-height: 200px;
   padding-bottom: 100px;
   padding-top: 55px;
   background-color: red; }
 
-/* line 33, stdin */
+/* line 49, stdin */
 #neve-footer {
   width: 100%;
   height: 100px;
@@ -37,11 +47,11 @@ html, body {
   background-color: green; }
 
 @media (max-width: 768px) {
-  /* line 45, stdin */
+  /* line 61, stdin */
   .module {
     background-color: blue; } }
 
 @media only screen and (min-width: 768px) {
-  /* line 45, stdin */
+  /* line 61, stdin */
   .module {
     background-color: pink; } }
