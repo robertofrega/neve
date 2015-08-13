@@ -1,0 +1,11 @@
+@media only screen and (min-width: 768px) {
+  /* line 5, stdin */
+  #neve-header {
+    height: 55px; }
+    /* line 8, stdin */
+    #neve-header #logo {
+      width: 110px;
+      height: 55px; }
+  /* line 15, stdin */
+  #neve-content {
+    padding-top: 55px; } }

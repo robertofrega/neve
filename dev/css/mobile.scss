@@ -1,4 +1,47 @@
 @import 'media-queries';
 @include mobile-only {
 
+
+#neve-header{
+	height: 40px;
+
+	.navbar-toggle{
+		height: 40px;
+	    width: 45px;
+	    position: relative;
+	    right: 0px;
+	    top: 0;
+	    margin: 0;
+	    border: 0;
+	    .fa{
+	    	font-size: 25px;
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%,-50%);
+	    }
+	}
+
+	#logo{
+    	width: 80px;
+    	height: 40px;
+    }
+}
+
+
+#neve-content{
+    padding-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 }	
