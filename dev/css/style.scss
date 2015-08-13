@@ -3,7 +3,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 200%;
 }
 
 
@@ -20,13 +20,13 @@ html, body {
 
     .navbar-toggle{
     	&.collapsed{
-    		.glyphicon-remove{
+    		.fa-remove{
     			opacity: 0;
 				transition: opacity 0.2s;
     		}
     	}
     	&:not(.collapsed){
-    		.glyphicon-menu-hamburger{
+    		.fa-bars{
     			opacity: 0;
 				transition: opacity 0.2s;
     		}

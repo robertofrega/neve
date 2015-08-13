@@ -31,6 +31,7 @@ gulp.task('clean', function(){
 gulp.task('copy', function(){
     return gulp.src( [
         paths.dev + '/js/**/*',
+        paths.dev + '/css/**/*.css',
         paths.dev + '/images/**/*',
         paths.dev + '/favicon.png',
 
@@ -48,8 +49,7 @@ gulp.task('fileinclude', function() {
     }))
     .pipe(fileinclude())
     .pipe(gulp.dest(paths.prod))
-    .pipe(livereload(server))
-    .pipe(notify({ message: 'Includes: included' }));
+    .pipe(livereload(server));
 });
 
 //  Sass: compile sass to css task - uses Libsass
@@ -59,8 +59,7 @@ gulp.task('sass', function() {
     .pipe(sass({ style: 'expanded', sourceComments: 'map', errLogToConsole: true}))
     .pipe(autoprefixer('last 2 version', "> 1%", 'ie 8', 'ie 9'))
     .pipe(gulp.dest(paths.css))
-    .pipe(livereload(server))
-    .pipe(notify({ message: 'LibSass files dropped!' }));
+    .pipe(livereload(server));
 });
 
 
