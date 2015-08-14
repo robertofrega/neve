@@ -8,6 +8,22 @@
 	#logo{
     	width: 110px;
     	height: 55px;
+    	margin-left: 35px;
+    }
+    #neve-search{
+    	margin-right: 35px;
+    	.fa-stack{
+    		top: 5px;
+    		cursor: pointer;
+    	}
+    	.fa-search{
+    		font-size: 25px;
+    		top: 50%;
+    		margin-top: -14px;
+    	}
+    	.fa-square{
+    		font-size: 45px;
+    	}
     }
 }
 

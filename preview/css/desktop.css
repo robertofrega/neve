@@ -5,7 +5,23 @@
     /* line 8, stdin */
     #neve-header #logo {
       width: 110px;
-      height: 55px; }
-  /* line 15, stdin */
+      height: 55px;
+      margin-left: 35px; }
+    /* line 13, stdin */
+    #neve-header #neve-search {
+      margin-right: 35px; }
+      /* line 15, stdin */
+      #neve-header #neve-search .fa-stack {
+        top: 5px;
+        cursor: pointer; }
+      /* line 19, stdin */
+      #neve-header #neve-search .fa-search {
+        font-size: 25px;
+        top: 50%;
+        margin-top: -14px; }
+      /* line 24, stdin */
+      #neve-header #neve-search .fa-square {
+        font-size: 45px; }
+  /* line 31, stdin */
   #neve-content {
     padding-top: 55px; } }

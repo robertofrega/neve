@@ -16,8 +16,9 @@ html, body {
 
 #neve-header{
 	max-width: 960px;
+    width: 100%;
     min-height: 40px;
-    margin: auto;
+    margin: 0 auto;
 
     .navbar-toggle{
     	&.collapsed{
@@ -32,10 +33,6 @@ html, body {
 				transition: opacity 0.2s;
     		}
     	}
-    }
-
-    #logo{
-        margin-left: 10px;
     }
 }
 

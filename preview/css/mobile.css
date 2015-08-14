@@ -23,7 +23,8 @@
     /* line 25, stdin */
     #neve-header #logo {
       width: 80px;
-      height: 40px; }
-  /* line 32, stdin */
+      height: 40px;
+      margin-left: 10px; }
+  /* line 33, stdin */
   #neve-content {
     padding-top: 40px; } }
