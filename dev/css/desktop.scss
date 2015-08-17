@@ -68,10 +68,37 @@
 
 #neve-content{
     padding-top: 55px;
+    padding-bottom: 45px;
 }
 
 
-
+#neve-footer{
+    height: 45px;
+    padding-left: 50px;
+    padding-right: 50px;
+    ul{
+        display: inline-block;
+        &#neve-sections{
+            float: left;
+            li{
+                font-size: 16px;
+                padding: 10px 10px;
+            }
+        }
+        &#neve-social{
+            position: absolute;
+            right: 170px;
+            margin-top: 5px;
+        }
+    }
+    #logo{
+        width: 80px;
+        height: 45px;
+        position: absolute;
+        right: 50px;
+        display: inline-block;
+    }
+}
 
 
 

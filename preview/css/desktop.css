@@ -60,4 +60,32 @@
           width: 320px; }
   /* line 69, stdin */
   #neve-content {
-    padding-top: 55px; } }
+    padding-top: 55px;
+    padding-bottom: 45px; }
+  /* line 75, stdin */
+  #neve-footer {
+    height: 45px;
+    padding-left: 50px;
+    padding-right: 50px; }
+    /* line 79, stdin */
+    #neve-footer ul {
+      display: inline-block; }
+      /* line 81, stdin */
+      #neve-footer ul#neve-sections {
+        float: left; }
+        /* line 83, stdin */
+        #neve-footer ul#neve-sections li {
+          font-size: 16px;
+          padding: 10px 10px; }
+      /* line 88, stdin */
+      #neve-footer ul#neve-social {
+        position: absolute;
+        right: 170px;
+        margin-top: 5px; }
+    /* line 94, stdin */
+    #neve-footer #logo {
+      width: 80px;
+      height: 45px;
+      position: absolute;
+      right: 50px;
+      display: inline-block; } }

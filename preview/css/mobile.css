@@ -47,6 +47,18 @@
         #neve-header #neve-search #neve-searchField input {
           height: 32px;
           width: 100%; }
-  /* line 57, stdin */
+  /* line 56, stdin */
   #neve-content {
-    padding-top: 40px; } }
+    padding-top: 40px;
+    padding-bottom: 200px; }
+  /* line 63, stdin */
+  #neve-footer {
+    text-align: center; }
+    /* line 66, stdin */
+    #neve-footer ul#neve-sections li {
+      display: block;
+      font-size: 20px; }
+    /* line 71, stdin */
+    #neve-footer #logo {
+      width: 80px;
+      height: 40px; } }
