@@ -27,6 +27,30 @@
     	height: 40px;
     	margin-left: 10px;
     }
+
+    #neve-menu{
+    	margin: 0 -15px;	
+    }
+
+    #neve-search{
+    	padding: 0 15px;
+    	position: relative;
+    	.fa-stack{
+    		float: right;
+    		z-index: 1;
+    	}
+    	#neve-searchField{
+    		position: absolute;
+		    left: 15px;
+		    right: 46px;
+		    top: 3px;
+		    z-index: 0;
+		    input{
+		    	height: 32px;
+			    width: 100%;
+		    }
+    	}
+    }
 }
 
 

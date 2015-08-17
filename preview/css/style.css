@@ -16,24 +16,42 @@ html, body {
   max-width: 960px;
   width: 100%;
   min-height: 40px;
-  margin: 0 auto; }
-  /* line 25, stdin */
+  margin: 0 auto;
+  z-index: 100; }
+  /* line 26, stdin */
   #neve-header .navbar-toggle.collapsed .fa-remove {
     opacity: 0;
     -webkit-transition: opacity 0.2s;
             transition: opacity 0.2s; }
-  /* line 31, stdin */
+  /* line 32, stdin */
   #neve-header .navbar-toggle:not(.collapsed) .fa-bars {
     opacity: 0;
     -webkit-transition: opacity 0.2s;
             transition: opacity 0.2s; }
 
-/* line 39, stdin */
+/* line 40, stdin */
 #neve-content {
   min-height: 200px;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  z-index: 50; }
 
-/* line 44, stdin */
+/* line 46, stdin */
+#neve-back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 90;
+  background-color: #ccc;
+  display: none;
+  opacity: .70;
+  filter: alpha(opacity=70); }
+  /* line 57, stdin */
+  #neve-back.active {
+    display: block; }
+
+/* line 62, stdin */
 #neve-footer {
   width: 100%;
   height: 100px;

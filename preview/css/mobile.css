@@ -25,6 +25,28 @@
       width: 80px;
       height: 40px;
       margin-left: 10px; }
-  /* line 33, stdin */
+    /* line 31, stdin */
+    #neve-header #neve-menu {
+      margin: 0 -15px; }
+    /* line 35, stdin */
+    #neve-header #neve-search {
+      padding: 0 15px;
+      position: relative; }
+      /* line 38, stdin */
+      #neve-header #neve-search .fa-stack {
+        float: right;
+        z-index: 1; }
+      /* line 42, stdin */
+      #neve-header #neve-search #neve-searchField {
+        position: absolute;
+        left: 15px;
+        right: 46px;
+        top: 3px;
+        z-index: 0; }
+        /* line 48, stdin */
+        #neve-header #neve-search #neve-searchField input {
+          height: 32px;
+          width: 100%; }
+  /* line 57, stdin */
   #neve-content {
     padding-top: 40px; } }

@@ -7,21 +7,57 @@
       width: 110px;
       height: 55px;
       margin-left: 35px; }
-    /* line 13, stdin */
+    /* line 14, stdin */
+    #neve-header #neve-menu {
+      box-sizing: border-box;
+      width: 100%;
+      padding-left: 205px;
+      margin-left: -160px;
+      padding-right: 95px;
+      margin-right: -90px;
+      text-align: center; }
+      /* line 22, stdin */
+      #neve-header #neve-menu .neve-menu-hover:hover > .dropdown-menu {
+        display: block; }
+      /* line 25, stdin */
+      #neve-header #neve-menu > li {
+        width: 21%; }
+        /* line 27, stdin */
+        #neve-header #neve-menu > li.child_3 {
+          width: 37%; }
+    /* line 33, stdin */
     #neve-header #neve-search {
       margin-right: 35px; }
-      /* line 15, stdin */
+      /* line 35, stdin */
       #neve-header #neve-search .fa-stack {
         top: 5px;
         cursor: pointer; }
-      /* line 19, stdin */
+      /* line 39, stdin */
       #neve-header #neve-search .fa-search {
         font-size: 25px;
         top: 50%;
         margin-top: -14px; }
-      /* line 24, stdin */
+      /* line 44, stdin */
       #neve-header #neve-search .fa-square {
         font-size: 45px; }
-  /* line 31, stdin */
+      /* line 47, stdin */
+      #neve-header #neve-search #neve-searchField {
+        position: absolute;
+        right: 0;
+        background-color: #ccc;
+        width: 340px;
+        height: 45px;
+        top: 55px;
+        display: none; }
+        /* line 55, stdin */
+        #neve-header #neve-search #neve-searchField.active {
+          display: block; }
+        /* line 58, stdin */
+        #neve-header #neve-search #neve-searchField input {
+          margin: 7px auto;
+          display: block;
+          height: 30px;
+          width: 320px; }
+  /* line 69, stdin */
   #neve-content {
     padding-top: 55px; } }

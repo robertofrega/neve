@@ -10,6 +10,26 @@
     	height: 55px;
     	margin-left: 35px;
     }
+
+    #neve-menu{
+        box-sizing: border-box;
+        width: 100%;
+        padding-left: 205px;
+        margin-left: -160px;
+        padding-right: 95px;
+        margin-right: -90px;
+        text-align: center;
+        .neve-menu-hover:hover > .dropdown-menu{
+            display: block;
+        }
+        & > li{
+            width: 21%;
+            &.child_3{
+                width: 37%;
+            }
+        }
+    }
+
     #neve-search{
     	margin-right: 35px;
     	.fa-stack{
@@ -24,6 +44,24 @@
     	.fa-square{
     		font-size: 45px;
     	}
+        #neve-searchField{
+            position: absolute;
+            right: 0;
+            background-color: #ccc;
+            width: 340px;
+            height: 45px;
+            top: 55px;
+            display: none;
+            &.active{
+                display: block;
+            }
+            input{
+                margin: 7px auto;
+                display: block;
+                height: 30px;
+                width: 320px;
+            }
+        }
     }
 }
 
