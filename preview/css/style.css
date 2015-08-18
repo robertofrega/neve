@@ -65,3 +65,12 @@ html, body {
   /* line 72, stdin */
   #neve-footer li {
     display: inline-block; }
+
+/* line 78, stdin */
+.neve-next-section {
+  margin: 0 auto;
+  width: 40px;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer; }

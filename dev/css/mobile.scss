@@ -1,6 +1,9 @@
 @import 'media-queries';
 @include mobile-only {
 
+.neve-desktop{
+    display: none;
+}
 
 #neve-header{
 	height: 40px;
