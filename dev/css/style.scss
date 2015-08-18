@@ -7,6 +7,30 @@ html, body {
 }
 
 
+/******************************
+            UTILS
+******************************/
+h1.neve-h,h2.neve-h,h3.neve-h{
+    margin: 0 0 10px 0;
+}
+
+.font-xs{
+    font-size: 10px;
+}
+.font-s{
+    font-size: 12px;
+}
+.font-m{
+    font-size: 14px;
+}
+.font-l{
+    font-size: 16px;
+}
+
+/******************************
+            PARTS
+******************************/
+
 #neve-body{
 	max-width: 960px;
 	min-height: 100%;

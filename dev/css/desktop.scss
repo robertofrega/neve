@@ -1,10 +1,28 @@
 @import 'media-queries';
 @include desktop-only {
 
+/******************************
+            UTILS
+******************************/
+
 .neve-mobile{
     display: none;
 }
 
+h1.neve-h{
+    font-size: 28px; 
+}
+h2.neve-h{
+    font-size: 22px;
+}
+h3.neve-h{
+    font-size: 18px;
+}
+
+
+/******************************
+            PARTS
+******************************/
 
 #neve-header{
 	height: 55px;
@@ -73,6 +91,10 @@
 #neve-content{
     padding-top: 55px;
     padding-bottom: 45px;
+    & > section .neve-section-content{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
 
 
