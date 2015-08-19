@@ -8,5 +8,89 @@
 	    background-repeat: no-repeat;
 	    background-position: 75% 50%;
 	    background-size: cover;
+
+	    @include desktop-only {
+	    	#div_1{
+	    		margin-top: 295px;
+	    	}
+	    	#div_2{
+	    		margin-top: 265px;	
+	    	}
+	    	img{
+	    		float: right;
+	    	}
+	    }
+
+    	
+	    @include mobile-only {
+	    	#div_1{
+	    		margin-top: 215px;
+	    	}
+	    	#div_2{
+	    		text-align: center;	
+	    	}
+		    img{
+	    		height: 70px;
+	    	}
+	    }
 	}
 }
+
+#neve-produtos{
+	@include desktop-only {
+		#div_1, #div_2, #div_3{
+			padding-left: 10px;
+			width: 50%;
+		}
+		#div_1, #div_3{
+			float: right;
+		}
+    	#div_1{
+    		margin-bottom: 10px;
+    	}
+		#div_2{
+    		float: left;
+    		text-align: center;
+    		img{
+    			height: 385px;
+    		}
+    	}
+    	#div_3{
+    		.neve-simple-video-container{
+    			display: inline-block;
+    			float: left;
+    		}
+    		img{
+    			height: 230px;
+    			margin-bottom: 20px;
+    		}
+    		p{
+    			text-align: center;
+    		}
+    	}
+    }
+
+	
+    @include mobile-only {
+    	#div_1, #div_2, #div_3{
+			width: 100%;
+		}
+		#div_2, #div_3{
+			text-align: center;
+		}
+    	#div_1{
+    		margin-bottom: 10px;
+    	}
+		#div_2{
+    		img{
+    			height: 265px;
+    		}
+    	}
+    	#div_3{
+    		img{
+    			height: 165px;
+    			margin-bottom: 10px;
+    		}
+    	}
+    }
+}	

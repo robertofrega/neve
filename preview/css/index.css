@@ -5,3 +5,71 @@
   background-repeat: no-repeat;
   background-position: 75% 50%;
   background-size: cover; }
+  @media only screen and (min-width: 768px) {
+    /* line 13, stdin */
+    #neve-vamos-combinar #combinar-top #div_1 {
+      margin-top: 295px; }
+    /* line 16, stdin */
+    #neve-vamos-combinar #combinar-top #div_2 {
+      margin-top: 265px; }
+    /* line 19, stdin */
+    #neve-vamos-combinar #combinar-top img {
+      float: right; } }
+  @media (max-width: 768px) {
+    /* line 26, stdin */
+    #neve-vamos-combinar #combinar-top #div_1 {
+      margin-top: 215px; }
+    /* line 29, stdin */
+    #neve-vamos-combinar #combinar-top #div_2 {
+      text-align: center; }
+    /* line 32, stdin */
+    #neve-vamos-combinar #combinar-top img {
+      height: 70px; } }
+
+@media only screen and (min-width: 768px) {
+  /* line 41, stdin */
+  #neve-produtos #div_1, #neve-produtos #div_2, #neve-produtos #div_3 {
+    padding-left: 10px;
+    width: 50%; }
+  /* line 45, stdin */
+  #neve-produtos #div_1, #neve-produtos #div_3 {
+    float: right; }
+  /* line 48, stdin */
+  #neve-produtos #div_1 {
+    margin-bottom: 10px; }
+  /* line 51, stdin */
+  #neve-produtos #div_2 {
+    float: left;
+    text-align: center; }
+    /* line 54, stdin */
+    #neve-produtos #div_2 img {
+      height: 385px; }
+  /* line 59, stdin */
+  #neve-produtos #div_3 .neve-simple-video-container {
+    display: inline-block;
+    float: left; }
+  /* line 63, stdin */
+  #neve-produtos #div_3 img {
+    height: 230px;
+    margin-bottom: 20px; }
+  /* line 67, stdin */
+  #neve-produtos #div_3 p {
+    text-align: center; } }
+
+@media (max-width: 768px) {
+  /* line 75, stdin */
+  #neve-produtos #div_1, #neve-produtos #div_2, #neve-produtos #div_3 {
+    width: 100%; }
+  /* line 78, stdin */
+  #neve-produtos #div_2, #neve-produtos #div_3 {
+    text-align: center; }
+  /* line 81, stdin */
+  #neve-produtos #div_1 {
+    margin-bottom: 10px; }
+  /* line 85, stdin */
+  #neve-produtos #div_2 img {
+    height: 265px; }
+  /* line 90, stdin */
+  #neve-produtos #div_3 img {
+    height: 165px;
+    margin-bottom: 10px; } }
