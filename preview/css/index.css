@@ -50,26 +50,93 @@
     float: left; }
   /* line 63, stdin */
   #neve-produtos #div_3 img {
-    height: 230px;
+    width: 100%;
     margin-bottom: 20px; }
   /* line 67, stdin */
   #neve-produtos #div_3 p {
-    text-align: center; } }
+    text-align: center; }
+  /* line 72, stdin */
+  #neve-produtos #products-list > h3 {
+    margin-top: 50px; }
+  /* line 76, stdin */
+  #neve-produtos .products-list-item {
+    margin-bottom: 50px;
+    position: relative; }
+    /* line 79, stdin */
+    #neve-produtos .products-list-item h3 {
+      display: inline-block;
+      min-width: 180px; }
+    /* line 83, stdin */
+    #neve-produtos .products-list-item > img {
+      float: right;
+      width: 50%;
+      margin-right: -7px; }
+    /* line 88, stdin */
+    #neve-produtos .products-list-item .item-characteristc {
+      margin-top: 40px; }
+    /* line 91, stdin */
+    #neve-produtos .products-list-item .item-details {
+      position: absolute;
+      bottom: 0; }
+      /* line 94, stdin */
+      #neve-produtos .products-list-item .item-details img {
+        width: 115px; }
+      /* line 97, stdin */
+      #neve-produtos .products-list-item .item-details button {
+        display: block;
+        margin: 10px auto 0 auto;
+        padding: 0 20px;
+        heignt: 30px; } }
 
 @media (max-width: 768px) {
-  /* line 75, stdin */
+  /* line 110, stdin */
   #neve-produtos #div_1, #neve-produtos #div_2, #neve-produtos #div_3 {
     width: 100%; }
-  /* line 78, stdin */
+  /* line 113, stdin */
   #neve-produtos #div_2, #neve-produtos #div_3 {
     text-align: center; }
-  /* line 81, stdin */
+  /* line 116, stdin */
   #neve-produtos #div_1 {
     margin-bottom: 10px; }
-  /* line 85, stdin */
+  /* line 120, stdin */
   #neve-produtos #div_2 img {
     height: 265px; }
-  /* line 90, stdin */
+  /* line 125, stdin */
   #neve-produtos #div_3 img {
     height: 165px;
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+  /* line 132, stdin */
+  #neve-produtos #products-list {
+    text-align: center; }
+    /* line 134, stdin */
+    #neve-produtos #products-list > h3 {
+      margin-top: 30px;
+      margin-bottom: 20px; }
+  /* line 140, stdin */
+  #neve-produtos .products-list-item {
+    margin-bottom: 20px; }
+    /* line 142, stdin */
+    #neve-produtos .products-list-item h3 {
+      display: inline-block; }
+    /* line 145, stdin */
+    #neve-produtos .products-list-item > img {
+      width: 100%;
+      padding: 0 30px; }
+    /* line 149, stdin */
+    #neve-produtos .products-list-item .item-characteristc {
+      margin-bottom: 40px; }
+    /* line 152, stdin */
+    #neve-produtos .products-list-item .item-details {
+      padding: 0 40px; }
+      /* line 154, stdin */
+      #neve-produtos .products-list-item .item-details h3 {
+        text-align: left; }
+      /* line 157, stdin */
+      #neve-produtos .products-list-item .item-details img {
+        width: 45px; }
+      /* line 160, stdin */
+      #neve-produtos .products-list-item .item-details button {
+        display: block;
+        margin: 10px auto 0 auto;
+        padding: 0 20px;
+        heignt: 30px; } }
