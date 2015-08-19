@@ -10,6 +10,24 @@ html, body {
 /******************************
             UTILS
 ******************************/
+
+.equidistant{
+    text-align: justify;
+    font-size: 0.1px;
+    &:after{
+        content: "";
+        width: 100%;
+        display: inline-block;
+    }
+    .equidistant-item{
+        display: inline-block;
+        text-align: left;
+    }
+}
+
+/***************/
+    HEADERS
+/***************/
 h1.neve-h,h2.neve-h,h3.neve-h{
     margin: 0 0 10px 0;
 }

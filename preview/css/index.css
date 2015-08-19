@@ -85,7 +85,7 @@
       #neve-produtos .products-list-item .item-details button {
         display: block;
         margin: 10px auto 0 auto;
-        padding: 0 20px;
+        width: 110px;
         heignt: 30px; } }
 
 @media (max-width: 768px) {
@@ -138,5 +138,62 @@
       #neve-produtos .products-list-item .item-details button {
         display: block;
         margin: 10px auto 0 auto;
-        padding: 0 20px;
+        width: 110px;
         heignt: 30px; } }
+
+/* line 174, stdin */
+#neve-toques-cuidado #div_1 {
+  background-color: #ccc;
+  padding: 20px 50px;
+  margin-bottom: 20px; }
+
+/* line 181, stdin */
+#neve-toques-cuidado .items-list-section h3 i {
+  font-size: 33px;
+  margin-right: 20px;
+  vertical-align: middle; }
+
+/* line 186, stdin */
+#neve-toques-cuidado .items-list-section ul {
+  margin: 30px 0;
+  padding: 0; }
+
+@media only screen and (min-width: 768px) {
+  /* line 194, stdin */
+  #neve-toques-cuidado .items-list-section ul li {
+    box-shadow: #999 2px 2px 5px;
+    width: 30%; }
+    /* line 197, stdin */
+    #neve-toques-cuidado .items-list-section ul li img {
+      width: 100%; }
+    /* line 200, stdin */
+    #neve-toques-cuidado .items-list-section ul li p {
+      background-color: #cecece;
+      padding: 10px;
+      margin: 0; } }
+
+@media (max-width: 768px) {
+  /* line 210, stdin */
+  #neve-toques-cuidado #div_2 {
+    padding: 0 10px 0 0; }
+  /* line 214, stdin */
+  #neve-toques-cuidado .items-list-section h3 {
+    padding-left: 15px; }
+  /* line 217, stdin */
+  #neve-toques-cuidado .items-list-section ul li {
+    width: 100%;
+    position: relative; }
+    /* line 220, stdin */
+    #neve-toques-cuidado .items-list-section ul li img {
+      width: 40%; }
+    /* line 223, stdin */
+    #neve-toques-cuidado .items-list-section ul li p {
+      padding: 0 0 0 10px;
+      margin: 0;
+      width: 60%;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); } }

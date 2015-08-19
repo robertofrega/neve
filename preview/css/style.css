@@ -7,30 +7,46 @@ html, body {
 /******************************
             UTILS
 ******************************/
-/* line 13, stdin */
+/* line 14, stdin */
+.equidistant {
+  text-align: justify;
+  font-size: 0.1px; }
+  /* line 17, stdin */
+  .equidistant:after {
+    content: "";
+    width: 100%;
+    display: inline-block; }
+  /* line 22, stdin */
+  .equidistant .equidistant-item {
+    display: inline-block;
+    text-align: left; }
+
+/***************/
+/* line 31, stdin */
+HEADERS
 h1.neve-h, h2.neve-h, h3.neve-h {
   margin: 0 0 10px 0; }
 
-/* line 17, stdin */
+/* line 35, stdin */
 .font-xs {
   font-size: 10px; }
 
-/* line 20, stdin */
+/* line 38, stdin */
 .font-s {
   font-size: 12px; }
 
-/* line 23, stdin */
+/* line 41, stdin */
 .font-m {
   font-size: 14px; }
 
-/* line 26, stdin */
+/* line 44, stdin */
 .font-l {
   font-size: 16px; }
 
 /******************************
             PARTS
 ******************************/
-/* line 34, stdin */
+/* line 52, stdin */
 #neve-body {
   max-width: 960px;
   min-height: 100%;
@@ -38,30 +54,30 @@ h1.neve-h, h2.neve-h, h3.neve-h {
   padding: 0;
   width: 100%; }
 
-/* line 42, stdin */
+/* line 60, stdin */
 #neve-header {
   max-width: 960px;
   width: 100%;
   min-height: 40px;
   margin: 0 auto;
   z-index: 100; }
-  /* line 51, stdin */
+  /* line 69, stdin */
   #neve-header .navbar-toggle.collapsed .fa-remove {
     opacity: 0;
     -webkit-transition: opacity 0.2s;
             transition: opacity 0.2s; }
-  /* line 57, stdin */
+  /* line 75, stdin */
   #neve-header .navbar-toggle:not(.collapsed) .fa-bars {
     opacity: 0;
     -webkit-transition: opacity 0.2s;
             transition: opacity 0.2s; }
 
-/* line 65, stdin */
+/* line 83, stdin */
 #neve-content {
   min-height: 200px;
   z-index: 50; }
 
-/* line 70, stdin */
+/* line 88, stdin */
 #neve-back {
   position: absolute;
   top: 0;
@@ -73,11 +89,11 @@ h1.neve-h, h2.neve-h, h3.neve-h {
   display: none;
   opacity: .70;
   filter: alpha(opacity=70); }
-  /* line 81, stdin */
+  /* line 99, stdin */
   #neve-back.active {
     display: block; }
 
-/* line 86, stdin */
+/* line 104, stdin */
 #neve-footer {
   width: 100%;
   position: absolute;
@@ -85,14 +101,14 @@ h1.neve-h, h2.neve-h, h3.neve-h {
   left: 0;
   background-color: #cdcdcd;
   z-index: 80; }
-  /* line 93, stdin */
+  /* line 111, stdin */
   #neve-footer ul {
     padding: 0; }
-  /* line 96, stdin */
+  /* line 114, stdin */
   #neve-footer li {
     display: inline-block; }
 
-/* line 102, stdin */
+/* line 120, stdin */
 .neve-next-section {
   margin: 0 auto 10px auto;
   width: 40px;
