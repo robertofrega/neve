@@ -173,8 +173,12 @@
 
     #div_1{
         background-color: #ccc;
-        padding: 20px 50px;
         margin-bottom: 20px;
+    }
+
+    #div_3{
+        text-align: center;
+        margin-bottom: 30px;
     }
 
     .items-list-section{
@@ -190,6 +194,9 @@
     }
 
     @include desktop-only {
+        #div_1{
+            padding: 15px 50% 15px 50px;
+        }
         .items-list-section{
             ul li{
                 box-shadow: #999 2px 2px 5px;
@@ -207,6 +214,9 @@
     }
 
     @include mobile-only {
+        #div_1{
+            padding: 15px;
+        }
         #div_2{
             padding: 0 10px 0 0;
         }
@@ -234,3 +244,66 @@
     }
 
 }   
+
+
+#neve-manifesto{
+
+    #div_1{
+        display: inline-block;
+        height: 100%;
+        position: relative;
+        background-image: url('../images/home/free.png');
+        background-repeat: no-repeat;
+        background-position: 25% 50%;
+        background-size: cover;
+        .neve-section-content{
+            position: absolute;
+            bottom: 10px;
+        }
+    }
+
+    #div_2{
+        text-align: center;
+    }
+
+    @include desktop_only{
+        height: 400px;
+        
+        #div_1{
+            width: 63.4%
+        }
+
+        #div_2{
+            float: right;
+            height: 100%;
+            display: inline-block;
+            width: 36.6%;
+            padding: 0 40px;
+        }
+        
+    }
+
+    @include mobile_only{
+        #div_1{
+            height: 325px;
+            width: 100%;
+            button{
+                margin: 0 auto;
+                width: 100px;
+                display: block;
+            }
+        }
+
+        #div_2 .neve-mobile{
+            .fa-facebook{
+                margin-right: 10px;
+                font-size: 30px;
+                vertical-align: middle;
+            }
+            button{
+                height: 30px;
+                width: 90px;
+            }
+        }
+    }
+}
