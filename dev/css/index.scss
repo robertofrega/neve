@@ -258,7 +258,7 @@
         background-size: cover;
         .neve-section-content{
             position: absolute;
-            bottom: 10px;
+            bottom: 30px;
         }
     }
 
@@ -270,7 +270,8 @@
         height: 400px;
         
         #div_1{
-            width: 63.4%
+            width: 63.4%;
+            float: left;
         }
 
         #div_2{

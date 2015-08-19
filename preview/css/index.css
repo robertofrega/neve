@@ -220,7 +220,7 @@
   /* line 259, stdin */
   #neve-manifesto #div_1 .neve-section-content {
     position: absolute;
-    bottom: 10px; }
+    bottom: 30px; }
 
 /* line 265, stdin */
 #neve-manifesto #div_2 {
@@ -232,8 +232,9 @@
     height: 400px; }
     /* line 272, stdin */
     #neve-manifesto #div_1 {
-      width: 63.4%; }
-    /* line 276, stdin */
+      width: 63.4%;
+      float: left; }
+    /* line 277, stdin */
     #neve-manifesto #div_2 {
       float: right;
       height: 100%;
@@ -242,21 +243,21 @@
       padding: 0 40px; } }
 
 @media (max-width: 768px) {
-  /* line 287, stdin */
+  /* line 288, stdin */
   #neve-manifesto #div_1 {
     height: 325px;
     width: 100%; }
-    /* line 290, stdin */
+    /* line 291, stdin */
     #neve-manifesto #div_1 button {
       margin: 0 auto;
       width: 100px;
       display: block; }
-  /* line 298, stdin */
+  /* line 299, stdin */
   #neve-manifesto #div_2 .neve-mobile .fa-facebook {
     margin-right: 10px;
     font-size: 30px;
     vertical-align: middle; }
-  /* line 303, stdin */
+  /* line 304, stdin */
   #neve-manifesto #div_2 .neve-mobile button {
     height: 30px;
     width: 90px; } }

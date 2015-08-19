@@ -49,6 +49,27 @@ h1.neve-h,h2.neve-h,h3.neve-h{
             PARTS
 ******************************/
 
+#neve-toTop{
+    position: fixed;
+    padding: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    height: 35px;
+    width: 35px;
+    z-index: 85;
+    i{
+        font-size: 30px;
+        position: relative;
+        bottom: 10px;
+    }
+    span{
+        font-size: 10px;
+        position: relative;
+        bottom: 20px;
+    }
+}
+
 #neve-body{
 	max-width: 960px;
 	min-height: 100%;
