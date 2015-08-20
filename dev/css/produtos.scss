@@ -1,0 +1,107 @@
+@import 'media-queries';
+
+
+#neve-page-produtos{
+	#neve-produtos-header{
+		height: 210px;
+		background-image: url('../images/produtos/products-banner.png');
+		background-repeat: no-repeat;
+	    background-position: 50% 50%;
+	    background-size: cover;
+	}
+
+	.neve-embalagens{
+		display: inline-block;
+		position: relative;
+		margin: 20px;
+		font-size: 16px;
+		&:before{
+		    content: '';
+		    padding: 25px;
+		    background: url("../images/produtos/paper-roll-icon.png") center center no-repeat;
+		    position: absolute;
+		    top: -25px;
+		    left: -55px;
+    	}	
+    	&:after{
+    		content: 'Disponível nos pacotes de:';
+    		font-size: 14px;
+		    position: absolute;
+		    left: -5px;
+		    top: -20px;
+		    width: 180px;
+    	}
+	}
+
+	#neve-produtos-list{
+		padding: 0;
+		margin: 0;
+		li{
+			display: block;
+			text-align: center;
+			&:nth-child(even){
+				background-color: #dfdfdf;
+			}
+		}
+		.neve-details{
+			button{
+				display: block;
+				margin: 10px auto;
+				width: 110px;
+				height: 35px;
+			}
+		}
+	}
+
+
+	@include desktop-only {
+		#neve-produtos-header{
+			div{
+				padding-left: 50px;
+				padding-top: 50px;
+				width: 50%;
+			}
+		}
+		#neve-produtos-list{
+			li{
+				.neve-illustration, .neve-details{
+					width: 50%;
+					display: inline-block;
+					padding: 30px 0;
+				}
+				.neve-illustration{
+					float: right;
+					img{
+						width: 245px;
+						max-height: 240px;
+					}
+				}
+				.neve-details{
+					padding-left: 130px;
+					p{
+						text-align: left;
+					}
+				}
+			}
+		}
+	}
+
+	@include mobile-only {
+		#neve-produtos-header{
+			padding: 100px 10px 0 10px;
+			h1{
+				margin: 0;
+			}
+		}
+
+		#neve-produtos-list{
+			li{
+				padding: 10px 15px;
+			}
+			img{
+				width: 220px;
+				max-height: 220px;
+			}
+		}
+	}
+}
