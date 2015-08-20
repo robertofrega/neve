@@ -105,3 +105,61 @@
 		}
 	}
 }
+
+
+
+#neve-page-produtos-detalhes{
+	ul{
+		margin: 0;
+		padding: 0;
+		li{
+			display: block;
+		}
+		&.neve-embalagens-buttons{
+			margin: 20px auto;
+			width: 270px;
+			li{
+				cursor: pointer;
+			}
+		}
+	}
+
+	#product-details{
+		background-color: #ccc;
+	}
+
+
+	@include desktop-only {
+		#product-details{
+			padding: 20px 50px;
+		}
+
+		#div_1, #div_2, #div_3{
+			width: 50%;
+			display: inline-block;
+		}
+
+		#div_2{
+			float: right;
+			text-align: center;
+			img{
+				width: 310px;
+				max-height: 310px;
+			}
+			ul{
+				li{
+					text-align: center;
+					display: inline-block;
+					width: 45px;
+					height: 45px;
+					border: 1px solid blue;
+					font-size: 15px;
+					&.active{
+						color: #fff;
+						background-color: blue;
+					}
+				}
+			}
+		}
+	}
+}
