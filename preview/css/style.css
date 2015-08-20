@@ -20,33 +20,36 @@ html, body {
   .equidistant .equidistant-item {
     display: inline-block;
     text-align: left; }
+  /* line 26, stdin */
+  .equidistant * {
+    font-size: 14px; }
 
 /***************/
-/* line 31, stdin */
+/* line 34, stdin */
 HEADERS
 h1.neve-h, h2.neve-h, h3.neve-h {
   margin: 0 0 10px 0; }
 
-/* line 35, stdin */
+/* line 38, stdin */
 .font-xs {
   font-size: 10px; }
 
-/* line 38, stdin */
+/* line 41, stdin */
 .font-s {
   font-size: 12px; }
 
-/* line 41, stdin */
+/* line 44, stdin */
 .font-m {
   font-size: 14px; }
 
-/* line 44, stdin */
+/* line 47, stdin */
 .font-l {
   font-size: 16px; }
 
 /******************************
             PARTS
 ******************************/
-/* line 52, stdin */
+/* line 55, stdin */
 #neve-toTop {
   position: fixed;
   padding: 0;
@@ -56,18 +59,18 @@ h1.neve-h, h2.neve-h, h3.neve-h {
   height: 35px;
   width: 35px;
   z-index: 85; }
-  /* line 61, stdin */
+  /* line 64, stdin */
   #neve-toTop i {
     font-size: 30px;
     position: relative;
     bottom: 10px; }
-  /* line 66, stdin */
+  /* line 69, stdin */
   #neve-toTop span {
     font-size: 10px;
     position: relative;
     bottom: 20px; }
 
-/* line 73, stdin */
+/* line 76, stdin */
 #neve-body {
   max-width: 960px;
   min-height: 100%;
@@ -75,30 +78,30 @@ h1.neve-h, h2.neve-h, h3.neve-h {
   padding: 0;
   width: 100%; }
 
-/* line 81, stdin */
+/* line 84, stdin */
 #neve-header {
   max-width: 960px;
   width: 100%;
   min-height: 40px;
   margin: 0 auto;
   z-index: 100; }
-  /* line 90, stdin */
+  /* line 93, stdin */
   #neve-header .navbar-toggle.collapsed .fa-remove {
     opacity: 0;
     -webkit-transition: opacity 0.2s;
             transition: opacity 0.2s; }
-  /* line 96, stdin */
+  /* line 99, stdin */
   #neve-header .navbar-toggle:not(.collapsed) .fa-bars {
     opacity: 0;
     -webkit-transition: opacity 0.2s;
             transition: opacity 0.2s; }
 
-/* line 104, stdin */
+/* line 107, stdin */
 #neve-content {
   min-height: 200px;
   z-index: 50; }
 
-/* line 109, stdin */
+/* line 112, stdin */
 #neve-back {
   position: absolute;
   top: 0;
@@ -110,11 +113,11 @@ h1.neve-h, h2.neve-h, h3.neve-h {
   display: none;
   opacity: .70;
   filter: alpha(opacity=70); }
-  /* line 120, stdin */
+  /* line 123, stdin */
   #neve-back.active {
     display: block; }
 
-/* line 125, stdin */
+/* line 128, stdin */
 #neve-footer {
   width: 100%;
   position: absolute;
@@ -122,14 +125,14 @@ h1.neve-h, h2.neve-h, h3.neve-h {
   left: 0;
   background-color: #cdcdcd;
   z-index: 80; }
-  /* line 132, stdin */
+  /* line 135, stdin */
   #neve-footer ul {
     padding: 0; }
-  /* line 135, stdin */
+  /* line 138, stdin */
   #neve-footer li {
     display: inline-block; }
 
-/* line 141, stdin */
+/* line 144, stdin */
 .neve-next-section {
   margin: 0 auto 10px auto;
   width: 40px;

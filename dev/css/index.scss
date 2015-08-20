@@ -190,6 +190,12 @@
             ul{
                 margin: 30px 0;
                 padding: 0;
+                li{
+                    position: relative;
+                    button{
+                        display: none;
+                    }
+                }
             }
     }
 
@@ -202,12 +208,28 @@
                 box-shadow: #999 2px 2px 5px;
                 width: 30%;
                 img{
-                    width: 100%
+                    width: 100%;
+                    transition: opacity 0.5s;
                 }
                 p{
                     background-color: #cecece;
                     padding: 10px;
                     margin: 0;
+                }
+                &:hover{
+                    cursor: pointer;
+                    img{
+                        border: 1px solid blue;
+                        opacity: 0.7;
+                    }
+                    button{
+                        display: block;
+                        position: absolute;
+                        margin: -35% 25%;
+                        height: 40px;
+                        width: 135px;
+                        border-radius: 20px;
+                    }
                 }
             }
         }
