@@ -1,0 +1,200 @@
+@import 'media-queries';
+
+
+#neve-page-toquecuidado{
+	header{
+		height: 100px;
+		background-color: #ddd; 
+		padding: 30px 0 0 50px;
+		h1{
+			margin: 0;
+		}
+	}
+
+	#neve-featured{
+		height: 300px;
+		background-color: #aaa;
+		padding: 0 50px 0 50px;
+		position: relative;
+		div{
+			position: absolute;
+			bottom: 20px;
+			h1{
+				margin: 10px 0 20px 0;
+			}
+		}
+	}
+	
+	.items-list-section{
+			position: relative;
+			& > button{
+				position: absolute;
+				right: 0;
+				bottom: 0;
+			}
+            h3 i{
+                font-size: 33px;
+                margin-right: 20px;
+                vertical-align: middle;
+            }
+            ul{
+                margin: 30px 0 0 50px;
+                padding: 0 0 50px 0;
+                width: 65%;
+                position: relative;
+                li{
+                	display: inline-block;
+                    position: relative;
+                    box-shadow: #999 2px 2px 5px;
+	                width: 280px;
+	                margin-right: 20px;
+	                margin-bottom: 20px;
+                    button{
+                        display: none;
+                    }
+	                img{
+	                    width: 100%;
+	                    transition: opacity 0.5s;
+	                }
+	                p{
+	                    background-color: #cecece;
+	                    padding: 10px;
+	                    margin: 0;
+	                }
+	                &:hover{
+	                    cursor: pointer;
+	                    img{
+	                        border: 1px solid blue;
+	                        opacity: 0.7;
+	                    }
+	                    button{
+	                        display: block;
+	                        position: absolute;
+	                        margin: -35% 25%;
+	                        height: 40px;
+	                        width: 135px;
+	                        border-radius: 20px;
+	                    }
+	                }
+                }
+                & > button{
+                	position: absolute;
+                	bottom: 20px;
+                	right: 40px;
+                }
+            }
+    }
+
+
+    #neve-articles-filter{
+    	float: right;
+    	background-color: #ccc;
+    	position: relative;
+    	z-index:55;
+    	ul{
+    		padding: 10px 0;
+    		li{
+    			display: block;
+    			cursor: pointer;
+    			&:hover{
+    				background-color: #eee;
+    			}
+    			&.active{
+    				background-color: #333;
+    				color: #fff;
+    			}
+    			div{
+    				display: inline-block;
+    				&.neve-icon-container{
+    					width: 30px; 
+    					font-size: 30px;
+    					text-align: center;
+    					vertical-align: middle;
+    				}
+    				&.neve-text-container{
+    					padding-left: 10px;
+    					max-width: 150px;
+    					vertical-align: middle;
+    				}
+    			}
+    		}
+    	}
+    }
+
+
+	@include desktop-only {
+		#neve-articles-filter{
+			margin-right: 30px;
+			top: 300px;
+			ul{
+				width: 220px;
+				li{
+					padding-left: 20px;
+				}
+			}
+		}
+	}
+
+	@include mobile-only {
+		#neve-featured{
+			padding: 15px;
+			margin-top: 35px;
+			& > div{
+				padding-right: 15px;
+				button{
+					margin: 0 auto;
+				    display: block;
+				    width: 80px;
+				}
+			}
+		}
+
+
+		#neve-articles-filter{
+			float: none;
+		    position: absolute;
+		    width: 100%;
+			ul{
+				display: none;
+				width: 100%;
+				&.neve-expanded{
+					display: block;
+				}
+				li{
+					padding: 0 15px;
+				}
+			}
+			& > div{
+			    height: 35px;
+			    text-align: center;
+			    padding-top: 10px;
+			    cursor: pointer;
+			}
+		}
+
+		.items-list-section{
+			ul{
+				padding: 10px 0;
+			    margin: 0;
+			    width: 100%;
+			    li{
+			    	margin: 0 auto 10px auto;
+				    max-width: 320px;
+				    width: 100%;
+				    display: block;
+			    }
+			    & > button{
+			    	width: 80px;
+				    display: block;
+				    margin: 10px auto;
+				    right: initial;
+				    bottom: initial;
+				    position: initial;
+			    }
+			}
+		}
+	}
+
+
+	
+}
