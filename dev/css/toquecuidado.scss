@@ -61,26 +61,6 @@
 	                    padding: 10px;
 	                    margin: 0;
 	                }
-	                &:hover{
-	                    cursor: pointer;
-	                    img{
-	                        border: 1px solid blue;
-	                        opacity: 0.7;
-	                    }
-	                    button{
-	                        display: block;
-	                        position: absolute;
-	                        margin: -35% 25%;
-	                        height: 40px;
-	                        width: 135px;
-	                        border-radius: 20px;
-	                    }
-	                }
-                }
-                & > button{
-                	position: absolute;
-                	bottom: 20px;
-                	right: 40px;
                 }
             }
     }
@@ -122,6 +102,31 @@
     }
 
 
+    #neve-suggestion{
+    	display: table;
+		& > div{
+			display: table-row;
+			height: 70px;
+			div{
+				display: table-cell;
+			    position: relative;
+			    top: 50%;
+			    width: 50%;
+			    background-color: #ccc;
+			    border: 1px solid blue;
+			    padding-top: 10px;
+			}
+		}
+		#suggestion-right{
+			text-align: right;
+			padding-right : 50px;
+		}
+		#suggestion-left{
+			padding-left : 50px;
+		}
+	}
+
+
 	@include desktop-only {
 		#neve-articles-filter{
 			margin-right: 30px;
@@ -133,12 +138,37 @@
 				}
 			}
 		}
+
+		.items-list-section{
+
+			ul li{ 
+				&:hover{
+                    cursor: pointer;
+                    img{
+                        border: 1px solid blue;
+                        opacity: 0.7;
+                    }
+                    button{
+                        display: block;
+                        position: absolute;
+                        margin: 35% 12%;
+                        height: 40px;
+                        width: 135px;
+                        border-radius: 20px;
+                    }
+                }
+				button{
+	            	position: absolute;
+	            	bottom: 20px;
+	            	right: 40px;
+            	}
+            }
+		}
 	}
 
 	@include mobile-only {
 		#neve-featured{
 			padding: 15px;
-			margin-top: 35px;
 			& > div{
 				padding-right: 15px;
 				button{
@@ -152,9 +182,10 @@
 
 		#neve-articles-filter{
 			float: none;
-		    position: absolute;
+		    position: relative;
 		    width: 100%;
 			ul{
+				margin: 0;
 				display: none;
 				width: 100%;
 				&.neve-expanded{
@@ -187,14 +218,224 @@
 			    	width: 80px;
 				    display: block;
 				    margin: 10px auto;
-				    right: initial;
-				    bottom: initial;
-				    position: initial;
 			    }
 			}
 		}
 	}
 
+	&.neve-post{
+
+		#neve-social-top{
+			margin: 10px 0;
+			.neve-social-counter{
+				border: 1px solid blue;
+				height: 25px;
+				min-width: 90px;
+				margin: 0 10px;
+				text-align: center;
+				display: inline-block;
+				& > div{
+					display: inline-block;
+					vertical-align: middle;
+				}
+				.social-icon-container{
+					height: 100%;
+					color: #fff;
+					background-color: blue;
+					width: 35px;
+				    font-size: 20px;
+				}
+				.social-counter-container{
+					color: blue;
+					width: 100%;
+					margin-left: -39px;
+					padding-left: 39px;
+				}
+			}
+		}
+
+		#neve-social-bottom{
+			font-size: 25px;
+			margin: 20px 0;
+		}
+
+		#neve-comments{
+			background-color: #ddd;
+			padding: 10px 20px 10px 50px;
+			.neve-comments-list,  #neve-new-comment{
+				padding: 0 0 0 20px;
+			}
+			#neve-new-comment{
+				textarea{
+					width: 100%;
+				    resize: vertical;
+				    min-height: 50px;
+				    padding: 10px 0px 0px 20px;
+				    border-radius: 5px;
+				    margin-top: 0px;
+				    margin-bottom: 0px;
+				    height: 50px;
+				}
+			}
+			.neve-comment, #neve-new-comment{
+				display: block;
+				.comment-user{
+					display: inline-block;
+					width: 45px;
+					height: 45px;
+				}
+				.comment-body{
+				    display: inline-block;
+				    width: 100%;
+				    padding-left: 50px;
+				    margin-left: -50px;
+				    vertical-align: top;
+				    margin-bottom: 10px;
+				}
+			}
+		}
+
+		#neve-articles{
+			& > h3{
+				padding-top: 20px;
+			}
+		}
+
+
+		@include desktop-only {
+			#neve-featured{
+				height: 210px;
+				p{
+					display: inline-block;
+				}
+				span{
+					float: right;
+				}
+			}
+
+			#neve-social-top{
+				text-align: right;
+			}
+
+			#neve-post{
+				padding-left: 50px;
+			}
+
+			#neve-social-bottom{
+				padding-left: 50px;
+			}
+
+			#neve-articles-filter{
+				top: 210px;
+			}
+
+			#neve-article{
+				padding-right: 290px;
+			}
+
+			#neve-articles{
+				padding-right: 285px;
+			}
+
+			.items-list-section{
+				ul{
+					padding: 0 0 0 50px;
+				    margin: 0;
+				    width: 100%;
+				    li{
+					    max-width: 200px;
+					    margin-right: 5px;
+					    button{
+					    	margin: 0;
+					    	bottom: 98px;
+					    	right: 32px;
+					    }
+				    }
+				}
+			}
+
+			#neve-comments{
+				.neve-comments-list .neve-comments-list{
+					padding: 0 0 0 45px;
+				}
+			}
+
+			#neve-suggestion{
+				cursor: pointer;
+				#suggestion-right{
+					padding-left : 10px;
+				}
+				#suggestion-left{
+					padding-right : 10px;
+				}
+			}
+
+			#neve-articles{
+				& > h3{
+					padding-left: 50px;
+				}
+			}
+
+		}
+
+		@include mobile-only{
+
+			#neve-social-top{
+				text-align: center;
+			}
+
+			#neve-post{
+				padding: 0 10px;
+			}
+
+			#neve-social-bottom{
+				text-align: center;
+			}
+
+			#neve-comments{
+				padding: 0 10px;
+			}
+
+			#neve-suggestion{
+				width: 100%;
+				#suggestion-right{
+					padding-right : 10px;
+				}
+				#suggestion-left{
+					padding-left : 10px;
+				}
+			}
+
+			#neve-articles{
+				& > h3{
+					padding-left: 10px;
+				}
+			}
+
+			.items-list-section{
+	            ul li{
+	                width: 100%;
+	                position: relative;
+	                box-shadow: none;
+	                margin: 0;
+	                max-width: 100%;
+	                img{
+	                    width: 40%
+	                }
+	                p{
+	                    padding:  0 0 0 10px;
+	                    margin: 0;
+	                    width: 60%;
+	                    position: absolute;
+	                    right: 0;
+	                    top: 50%;
+	                    transform: translateY(-50%);
+	                	background-color: transparent;
+	                }
+	            }
+	        }
+		}
+	}
 
 	
 }
