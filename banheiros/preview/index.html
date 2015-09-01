@@ -19,6 +19,9 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/mobile.css">
 	<link rel="stylesheet" href="css/desktop.css">
+	
+
+	<link rel="stylesheet" href="css/home.css">
 
 	<!--[if lt IE 9]>
 		<script src="js/html5shiv.min.js"></script>
@@ -29,93 +32,38 @@
 </head>
 <body>
 
-<div class="container" id="neve-body">
-<!-- Static navbar --> 
-<nav id="neve-header" class="navbar navbar-default navbar-fixed-top">
-<div class="container-fluid">
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-      <i class="fa fa-bars"></i>
-      <i class="fa fa-remove"></i>
-    </button>
-    <a href="#">
-		  <img src="images/logo.png" id="logo" />
-    </a>
+<header id="top-header" >
+  <div class="social-container" >
+    <a><i class="fa fa-facebook" ></i></a>
+    <a><i class="fa fa-twitter" ></i></a>
+    <a><i class="fa fa-instagram" ></i></a>
   </div>
-  <div id="navbar" class="navbar-collapse collapse">
-    <ul class="nav navbar-nav" id="neve-menu">
-      <li class="dropdown active" >
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">A Marca<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="./marca/manifesto.html">Manifesto</a></li>
-          <li><a href="./marca/campanhas.html">Campanhas</a></li>
-          <li><a href="./marca/acontecimentos.html">Acontecimentos</a></li>
-        </ul>
-      </li>
-      <li class="dropdown neve-menu-hover" >
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Produtos<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="./marca/manifesto.html">Manifesto</a></li>
-          <li><a href="./marca/campanhas.html">Campanhas</a></li>
-          <li><a href="./marca/acontecimentos.html">Acontecimentos</a></li>
-        </ul>
-      </li>
-      <li class="child_3" ><a href="./toquecuidado.html">Toque de Cuidado</a></li>
-      <li><a href="./contato.html">Contato</a></li>
-    </ul>
-    <div id="neve-search" class="nav navbar-nav navbar-right">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-square fa-stack-2x"></i>
-        <i class="fa fa-search fa-stack-1x fa-inverse"></i>
-      </span>
-      <div id="neve-searchField" >
-        <input type="search" placeholder="Procura por?" />
-      <div>
-    </div>
-    </div>
-    </div>
-  </div><!--/.nav-collapse -->
-</div><!--/.container-fluid -->
-</nav>
 
-<div id="neve-content" >
+  <div class="logo-container" >
+    <img src="images/banheiro_logo.png" />
+  </div>
+</header>
 
 
 
+<section id="home-section" >
+	<div>
+		<div id="novidade-breve" >
+			<h1>Vem novidade por aí</h1>
+			<p>Volte aqui em breve para descobrir.</p>
+		</div>
 
-</div>
+		<div id="model-container" >
+			<img src="images/home/modelo_1.png" />
+		</div>
+	</div>
+	<div id="circle-shadow" >
+		<img src="images/home/circle_shadow.png" id="circle-shadow" />
+	</div>
+</section>
 
-<div id="neve-back" ></div>
 
-<button id="neve-toTop" onclick="View.Nav.scrollTo('#neve-body')" >
-	<i class="fa fa-caret-up" ></i>
-	<span>Topo</span>
-</button>
 
-<footer id="neve-footer" >
-	<ul id="neve-sections" >
-		<li>A Marca</li>
-		<li>Produtos</li>
-		<li>Contato</li>
-	</ul>
-	<ul id="neve-social" >
-		<li>
-			<span class="fa-stack fa-lg">
-			  <i class="fa fa-circle-o fa-stack-2x"></i>
-			  <i class="fa fa-facebook fa-stack-1x"></i>
-			</span>
-		</li>
-		<li>
-			<span class="fa-stack fa-lg">
-			  <i class="fa fa-circle-o fa-stack-2x"></i>
-			  <i class="fa fa-twitter fa-stack-1x"></i>
-			</span>
-		</li>
-	</ul>
-	<img src="images/logo.png" id="logo" />
-</footer>
-
-</div>
 <script src="//code.jquery.com/jquery-1.11.3.min.js" ></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
