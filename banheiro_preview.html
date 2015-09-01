@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>NEVE - PREVIEW</title>
+
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" id="viewport" content="initial-scale=1; maximum-scale=1; user-scalable=0;">
+</head>
+<body>
+
+<div class="menu" >
+	<button onclick="View.setDesktop()" id="desktopType" class="device-type selected" >Desktop</button>
+	<button onclick="View.setMobile()" id="mobileType" class="device-type" >Mobile</button>
+	<ul class="pages-list" >
+		<li>
+			<a href="banheiros/preview/index.html" target="frame_view" >Home</a>
+			<ul class="pages-list" >
+				<li class="undone" >
+					<a href="banheiros/preview/.html" target="frame_view" >Mapa ampliado</a>
+				</li>
+				<li class="undone" >
+					<a href="banheiros/preview/.html" target="frame_view" >Manifesto completo</a>
+				</li>
+				<li class="undone" >
+					<a href="banheiros/preview/.html" target="frame_view" >Imagem ampliada</a>
+				</li>
+			</ul>
+		</li>
+		<li class="undone" >
+			<a href="banheiros/preview/.html" target="frame_view" >Imagens Airbnb</a>
+			<ul class="pages-list" >
+				<li class="undone" >
+					<a href="banheiros/preview/.html" target="frame_view" >Curiosidades</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<iframe src="banheiros/preview/index.html" name="frame_view" id="frame_view" class="desktop">
+
+</iframe>
+
+</body>
+</html>
+
+
+<style>
+	html,body{
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.menu{
+	    width: 200px;
+	    border: 1px solid black;
+	    float: left;
+	}
+	.device-type{
+		background-color: #fff;
+		margin: 20px auto;
+		cursor: pointer;
+		transition: all 0.8s;
+	}
+	.device-type.selected{
+		background-color: #0062ac;
+		color: #fff;
+	}
+	.pages-list{
+		margin-bottom: 10px;
+	}
+	.pages-list li{
+		display: block;
+		margin-bottom: 10px;
+	}
+	.pages-list li.undone{
+		cursor: not-allowed;
+	}
+	.pages-list li.undone > a{
+		pointer-events: none;
+		color: #ccc;
+	}
+	#frame_view{
+		height: 100%;
+		transition: width 1s;
+	}
+	#frame_view.desktop{
+		width: calc(100% - 250px);
+	}
+	#frame_view.mobile{
+		width: 320px;
+	}
+</style>
+
+<script>
+	var mobileType = document.getElementById('mobileType');
+	var desktopType = document.getElementById('desktopType');
+	var frame_view = document.getElementById('frame_view');
+	var View = {
+		setMobile: function(){
+			mobileType.className = "device-type selected";
+			desktopType.className = "device-type";
+			frame_view.className = "mobile";
+		},
+		setDesktop: function(){
+			mobileType.className = "device-type";
+			desktopType.className = "device-type selected";
+			frame_view.className = "desktop";
+		}
+	}
+</script>

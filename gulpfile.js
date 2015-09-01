@@ -15,12 +15,14 @@ var gulp = require('gulp'),
     path = require("path"),
     runSequence = require('run-sequence');
 
+var working = "banheiros/" || "neve/";
+
 var paths = {
-  dev: 'dev',
-  prod: 'preview',
-  templates: 'dev/templates/',
-  sass: 'dev/css/',
-  css: 'preview/css'
+  dev: working + 'dev',
+  prod: working + 'preview',
+  templates: working + 'dev/templates/',
+  sass: working + 'dev/css/',
+  css: working + 'preview/css',
 };
 
 gulp.task('clean', function(){

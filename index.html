@@ -10,55 +10,10 @@
 <body>
 
 <div class="menu" >
-	<button onclick="View.setDesktop()" id="desktopType" class="device-type selected" >Desktop</button>
-	<button onclick="View.setMobile()" id="mobileType" class="device-type" >Mobile</button>
-	<ul class="pages-list" >
-		<li>
-			<a href="preview/index.html" target="frame_view" >1.Home</a>
-			<ul class="pages-list" >
-				<li>
-					<a href="preview/busca.html" target="frame_view" >Busca</a>
-				</li>
-			</ul>
-		</li>
-		<li class="undone" >
-			<a href="preview/.html" target="frame_view" >2.A Marca</a>
-			<ul class="pages-list" >
-				<li class="undone" >
-					<a href="preview/.html" target="frame_view" >Manifesto</a>
-				</li>
-			</ul>
-		</li>
-		<li>
-			<a href="preview/produtos.html" target="frame_view" >3.Produtos</a>
-			<ul class="pages-list" >
-				<li>
-					<a href="preview/produto_detalhe.html" target="frame_view" >Interna Produto</a>
-				</li>
-			</ul>
-		</li>
-		<li class="undone" >
-			<a href="preview/.html" target="frame_view" >4.Campanhas</a>
-			<ul class="pages-list" >
-				<li class="undone" >
-					<a href="preview/.html" target="frame_view" >Interna</a>
-				</li>
-			</ul>
-		</li>
-		<li>
-			<a href="preview/toquecuidado.html" target="frame_view" >5.Toque de Cuidado</a>
-			<ul class="pages-list" >
-				<li>
-					<a href="preview/toquecuidado_post.html" target="frame_view" >Interna Post</a>
-				</li>
-			</ul>
-		</li>
-		<li class="undone" >
-			<a href="preview/contato.html" target="frame_view" >6.Contato</a>
-		</li>
-	</ul>
+	<button onclick="View.setNeve()" id="neve" class="view-type" >Neve</button>
+	<button onclick="View.setBanheiros()" id="banheiro" class="view-type" >Banheiros Espetaculares</button>
 </div>
-<iframe src="preview/index.html" name="frame_view" id="frame_view" class="desktop">
+<iframe src="" name="parent-frame_view" id="parent-frame_view">
 
 </iframe>
 
@@ -68,65 +23,63 @@
 
 <style>
 	html,body{
-		height: 100%;
+		height: calc(100% - 55px);
 		margin: 0;
 		padding: 0;
 	}
 	.menu{
-	    width: 200px;
+	    height: 50px;
 	    border: 1px solid black;
-	    float: left;
+	    background-color: #ccc;
 	}
-	.device-type{
+	.view-type{
 		background-color: #fff;
 		margin: 20px auto;
 		cursor: pointer;
 		transition: all 0.8s;
 	}
-	.device-type.selected{
+	.view-type.selected{
 		background-color: #0062ac;
 		color: #fff;
 	}
-	.pages-list{
-		margin-bottom: 10px;
-	}
-	.pages-list li{
-		display: block;
-		margin-bottom: 10px;
-	}
-	.pages-list li.undone{
-		cursor: not-allowed;
-	}
-	.pages-list li.undone > a{
-		pointer-events: none;
-		color: #ccc;
-	}
-	#frame_view{
+	
+	#parent-frame_view{
 		height: 100%;
-		transition: width 1s;
-	}
-	#frame_view.desktop{
-		width: 960px;
-	}
-	#frame_view.mobile{
-		width: 320px;
+		width: 100%;
 	}
 </style>
 
 <script>
-	var mobileType = document.getElementById('mobileType');
-	var desktopType = document.getElementById('desktopType');
-	var frame_view = document.getElementById('frame_view');
+	var neve = document.getElementById('neve');
+	var banheiro = document.getElementById('banheiro');
+	var parent_frame_view = document.getElementById('parent-frame_view');
 	var View = {
-		setMobile: function(){
-			mobileType.className = "device-type selected";
-			desktopType.className = "device-type";
-			frame_view.className = "mobile";
+		setNeve: function(){
+			if(this.view !== "neve"){
+				neve.className = "view-type selected";
+				banheiro.className = "view-type";
+				parent_frame_view.src = "neve_preview.html";
+				this.view = "neve";
+				localStorage['lastView'] = "neve";
+			}
 		},
-		setDesktop: function(){
-			mobileType.className = "device-type";
-			desktopType.className = "device-type selected";
-			frame_view.className = "desktop";
-		}
+		setBanheiros: function(){
+			if(this.view !== "banheiro"){
+				neve.className = "view-type";
+				banheiro.className = "view-type selected";
+				parent_frame_view.src = "banheiro_preview.html";
+				this.view = "banheiro";
+				localStorage['lastView'] = "banheiro";
+			}
+		},
+		view: ""
 	}
+
+	if(localStorage['lastView']==="banheiro"){
+		View.setBanheiros();
+	}else{
+		View.setNeve();
+	}
+
+
 </script>

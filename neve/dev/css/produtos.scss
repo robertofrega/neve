@@ -1,0 +1,355 @@
+@import 'media-queries';
+
+
+#neve-page-produtos{
+	#neve-produtos-header{
+		height: 210px;
+		background-image: url('../images/produtos/products-banner.png');
+		background-repeat: no-repeat;
+	    background-position: 50% 50%;
+	    background-size: cover;
+	}
+
+	.neve-embalagens{
+		display: inline-block;
+		position: relative;
+		margin: 20px;
+		font-size: 16px;
+		&:before{
+		    content: '';
+		    padding: 25px;
+		    background: url("../images/produtos/paper-roll-icon.png") center center no-repeat;
+		    position: absolute;
+		    top: -25px;
+		    left: -55px;
+    	}	
+    	&:after{
+    		content: 'Disponível nos pacotes de:';
+    		font-size: 14px;
+		    position: absolute;
+		    left: -5px;
+		    top: -20px;
+		    width: 180px;
+    	}
+	}
+
+	#neve-produtos-list{
+		padding: 0;
+		margin: 0;
+		li{
+			display: block;
+			text-align: center;
+			&:nth-child(even){
+				background-color: #dfdfdf;
+			}
+		}
+		.neve-details{
+			button{
+				display: block;
+				margin: 10px auto;
+				width: 110px;
+				height: 35px;
+			}
+		}
+	}
+
+
+	@include desktop-only {
+		#neve-produtos-header{
+			div{
+				padding-left: 50px;
+				padding-top: 50px;
+				width: 50%;
+			}
+		}
+		#neve-produtos-list{
+			li{
+				.neve-illustration, .neve-details{
+					width: 50%;
+					display: inline-block;
+					padding: 30px 0;
+				}
+				.neve-illustration{
+					float: right;
+					img{
+						width: 245px;
+						max-height: 240px;
+					}
+				}
+				.neve-details{
+					padding-left: 130px;
+					p{
+						text-align: left;
+					}
+				}
+			}
+		}
+	}
+
+	@include mobile-only {
+		#neve-produtos-header{
+			padding: 100px 10px 0 10px;
+			h1{
+				margin: 0;
+			}
+		}
+
+		#neve-produtos-list{
+			li{
+				padding: 10px 15px;
+			}
+			img{
+				width: 220px;
+				max-height: 220px;
+			}
+		}
+	}
+}
+
+
+
+#neve-page-produtos-detalhes{
+	ul{
+		margin: 0;
+		padding: 0;
+		li{
+			display: block;
+		}
+		&.neve-embalagens-buttons{
+			margin: 20px auto;
+			width: 270px;
+			li{
+				cursor: pointer;
+			}
+		}
+		&#neve-characteristics{
+			div{
+				display: inline-block;
+				width: 40px;
+				vertical-align: middle;
+				text-align: center;
+				margin: 10px 10px 10px 0;
+			}
+			img{
+				max-width: 40px;
+				max-height: 40px;
+			}
+		}
+	}
+
+	#product-details{
+		background-color: #ccc;
+	}
+
+	#neve-suggestion{
+		background-color: #bbb;
+	}
+
+	#div_2{
+		li{
+			text-align: center;
+			display: inline-block;
+			width: 45px;
+			height: 45px;
+			border: 1px solid blue;
+			font-size: 15px;
+			&.active{
+				color: #fff;
+				background-color: blue;
+			}
+		}
+	}
+
+	#div_3{
+		#neve-social{
+			font-size: 30px;
+			margin: 20px 0;
+		}
+	}
+
+	#products-others > div{
+		& > div{
+			display: inline-block;
+			width: 50%;
+			background-color: #bbb;
+			position: relative;
+			border: 1px solid #eee;
+		}
+	}
+
+	#product-campaign{
+		position: relative;
+	}
+
+
+	@include desktop-only {
+		#product-details{
+			padding: 20px 50px 70px 20px;
+		}
+
+		#div_1{
+			float: left;
+		}
+
+		#div_1, #div_2, #div_3{
+			width: 50%;
+			display: inline-block;
+		}
+
+		#div_2{
+			float: right;
+			text-align: center;
+		    margin-right: -45px;
+			img{
+				width: 310px;
+				max-height: 310px;
+			}
+		}
+
+		#neve-suggestion{
+			position: absolute;
+		    width: 490px;
+		    left: 0;
+		    height: 35px;
+		    padding-left: 70px;
+		    div{
+	    	    position: relative;
+				top: -60%;
+		    }
+		    img{
+	    	    max-height: 80px;
+    			margin-left: 20px;
+		    }
+		}
+
+		#products-others > div{
+			& > div{
+				height: 130px;
+				div{
+				    display: inline-block;
+				    position: relative;
+				    top: 50%;
+				    margin-top: -34px;
+				    width: 50%;
+				}
+			}
+			#product-right{
+				text-align: right;
+				padding-right : 50px;
+				img{
+					float: right;
+					margin-left: 20px;
+				}
+			}
+			#product-left{
+				padding-left : 50px;
+				float: left;
+				img{
+					float: left;
+					margin-right: 20px;
+				}
+			}
+			img{
+				max-height: 130px;
+				max-width: 130px;
+			}
+		}
+
+		#product-campaign{
+			min-height: 370px;
+			#div_1,#div_2,#div_3{
+				width: 50%;
+				position: absolute;
+			}
+			#div_1{
+				right: 0;
+				top: 40px;
+			}
+			#div_2{
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				padding-right: 80px;
+				img{
+					max-height: 280px;
+					max-width: 400px;
+				}
+			}
+			#div_3{
+				right: 0;
+				bottom: 20px;
+				img{
+					width: 400px;
+					height: 235px;
+				}
+			}
+		}
+
+	}
+
+	@include mobile-only{
+		#product-details{
+			padding: 5px 15px;
+		}
+		#div_2{
+			text-align: center;
+			img{
+				max-width: 230px;
+			}
+		}
+		#div_3{
+			#neve-social{
+				text-align: center;
+			}
+			#neve-suggestion{
+				text-align: center;
+			    padding: 5px;
+			    width: 110%;
+			    margin-left: -5%;
+				img{
+					max-height: 50px;
+					display: block;
+					margin: 0 auto;
+				}
+			}
+		}
+
+		#products-others{
+			display: table;
+			width: 100%;
+			& > div{ 
+				display: table-row;
+				& > div{
+					display: table-cell;
+					text-align: center;
+					padding: 5px 15px;
+					width: 50%;
+					p{
+						text-align: left;
+					}
+				}
+				img{
+					max-height: 80px;
+					max-width: 80px;
+				}
+			}
+		}
+
+		#product-campaign{
+			padding: 10px 15px 20px 15px;
+			#div_1 h2{
+				text-align: center;
+			}
+			#div_2{
+				img{
+					width: 100%;
+				}
+			}
+			#div_3{
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+}

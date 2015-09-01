@@ -1,0 +1,111 @@
+@import 'media-queries';
+@include mobile-only {
+
+
+/******************************
+            UTILS
+******************************/
+
+.neve-desktop{
+    display: none;
+}
+
+h1.neve-h{
+    font-size: 24px; 
+}
+h2.neve-h{
+    font-size: 18px;
+}
+h3.neve-h{
+    font-size: 16px;
+}
+
+
+/******************************
+            PARTS
+******************************/
+
+#neve-header{
+	height: 40px;
+
+	.navbar-toggle{
+		height: 40px;
+	    width: 45px;
+	    position: relative;
+	    right: 0px;
+	    top: 0;
+	    margin: 0;
+	    border: 0;
+	    .fa{
+	    	font-size: 25px;
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%,-50%);
+	    }
+	}
+
+	#logo{
+    	width: 80px;
+    	height: 40px;
+    	margin-left: 10px;
+    }
+
+    #neve-menu{
+    	margin: 0 -15px;	
+    }
+
+    #neve-search{
+    	padding: 0 15px;
+    	position: relative;
+    	.fa-stack{
+    		float: right;
+    		z-index: 1;
+    	}
+    	#neve-searchField{
+    		position: absolute;
+		    left: 15px;
+		    right: 46px;
+		    top: 3px;
+		    z-index: 0;
+		    input{
+		    	height: 32px;
+			    width: 100%;
+		    }
+    	}
+    }
+}
+
+#neve-content{
+    padding-top: 40px;
+    padding-bottom: 180px;
+    & > section .neve-section-content{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+
+#neve-footer{
+	text-align: center;
+	ul{
+        &#neve-sections li{
+            display: block;
+            font-size: 20px;
+        }
+    }	
+    #logo{
+        width: 80px;
+        height: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+}	

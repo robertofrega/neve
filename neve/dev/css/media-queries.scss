@@ -1,0 +1,15 @@
+$mq-mobile              : 768px !default;
+
+// Both portrait and landscape
+@mixin mobile-only {
+    @media (max-width : $mq-mobile) {
+        @content;
+    }
+}
+
+// Everything below and including the desktop 
+@mixin desktop-only {
+    @media only screen and (min-width : $mq-mobile) {
+        @content;
+    }
+}
