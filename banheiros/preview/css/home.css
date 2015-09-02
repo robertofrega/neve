@@ -4,44 +4,84 @@ html, body {
   padding: 0;
   height: 100%;
   min-height: 555px; }
+  @media (max-width: 768px) {
+    /* line 3, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+    html, body {
+      min-height: 320px; } }
 
 /******************************
             UTILS
 ******************************/
-/* line 16, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+/* line 21, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
 .equidistant {
   text-align: justify;
   font-size: 0.1px; }
-  /* line 19, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+  /* line 24, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
   .equidistant:after {
     content: "";
     width: 100%;
     display: inline-block; }
-  /* line 24, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+  /* line 29, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
   .equidistant .equidistant-item {
     display: inline-block;
     text-align: left; }
-  /* line 28, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+  /* line 33, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
   .equidistant * {
     font-size: 14px; }
 
-/* line 33, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+/* line 38, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+.absolute-middle {
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  /* line 47, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+  .absolute-middle .middle-container {
+    display: table-cell;
+    vertical-align: middle; }
+
+/* line 53, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
 .cut-text {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap; }
 
+@font-face {
+  font-family: primary-font;
+  src: url(../font/SinkinSans-400Regular.otf); }
+
+/* line 65, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+.neve-font {
+  font-family: primary-font; }
+
 /******************************
             HEADER
 ******************************/
-/* line 45, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+/* line 73, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
 .logo-container {
   position: absolute;
   top: 15px;
   left: 20px;
-  z-index: 150; }
+  z-index: 150;
+  height: 40%;
+  width: 15%;
+  background-image: url("../images/banheiro_logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 0%;
+  background-position-y: 0%; }
+  @media (max-width: 768px) {
+    /* line 73, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+    .logo-container {
+      width: 40%;
+      height: 40%;
+      left: 10px; } }
 
-/* line 52, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+/* line 92, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
 #top-header {
   z-index: 100;
   height: 35px;
@@ -49,15 +89,30 @@ html, body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(4, 4, 4, 0.5); }
-  /* line 60, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+  background-color: rgba(4, 4, 4, 0.9); }
+  @media only screen and (min-width: 768px) {
+    /* line 101, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+    #top-header .social-container {
+      font-size: 14px; }
+    /* line 104, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+    #top-header a {
+      margin-left: 15px; } }
+  @media (max-width: 768px) {
+    /* line 92, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+    #top-header {
+      height: 50px; }
+      /* line 110, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+      #top-header .social-container {
+        font-size: 25px; }
+      /* line 113, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+      #top-header a {
+        margin-left: 35px; } }
+  /* line 117, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
   #top-header .social-container {
     text-align: right;
-    padding-right: 20px; }
-    /* line 63, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
-    #top-header .social-container a {
-      margin-left: 15px; }
-    /* line 66, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+    padding-right: 20px;
+    padding-top: 8px; }
+    /* line 121, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
     #top-header .social-container .fa {
       color: #b99742;
       cursor: pointer; }
@@ -70,34 +125,72 @@ html, body {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover; }
-  /* line 12, stdin */
-  #home-section #novidade-breve {
-    display: inline-block;
-    width: 45%;
-    float: left; }
-    /* line 16, stdin */
-    #home-section #novidade-breve h1 {
-      color: #b99742; }
-    /* line 19, stdin */
-    #home-section #novidade-breve p {
-      color: #fff; }
-  /* line 23, stdin */
+  /* line 13, stdin */
+  #home-section #novidade-breve #text-content {
+    height: 118px;
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 60px;
+    padding-left: 90px;
+    padding-top: 5px;
+    background-color: rgba(0, 0, 0, 0.3); }
+    @media (max-width: 768px) {
+      /* line 13, stdin */
+      #home-section #novidade-breve #text-content {
+        padding: 1px 10px;
+        height: 108px;
+        margin-top: 80px; }
+        /* line 25, stdin */
+        #home-section #novidade-breve #text-content h1 {
+          font-size: 20px; }
+        /* line 28, stdin */
+        #home-section #novidade-breve #text-content p {
+          font-size: 15px; } }
+  /* line 33, stdin */
+  #home-section #novidade-breve h1 {
+    color: #b99742;
+    font-size: 23.82px; }
+  /* line 37, stdin */
+  #home-section #novidade-breve p {
+    color: #fff;
+    font-size: 16.78px;
+    line-height: 1.5;
+    margin-top: -8px; }
+  /* line 44, stdin */
   #home-section #model-container {
+    background-image: url("../images/home/modelo_1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 100%;
+    height: 100%;
+    width: 55%;
     position: absolute;
-    right: 0;
     bottom: 0;
-    width: 55%; }
-    /* line 28, stdin */
-    #home-section #model-container img {
-      width: 100%; }
-  /* line 32, stdin */
+    right: 0; }
+  /* line 56, stdin */
+  #home-section #neve-play {
+    text-align: center;
+    padding-top: 40px; }
+    /* line 59, stdin */
+    #home-section #neve-play span {
+      font-size: 5.5em;
+      cursor: pointer;
+      z-index: 150; }
+    /* line 64, stdin */
+    #home-section #neve-play .fa-circle {
+      color: rgba(255, 255, 255, 0.2); }
+    /* line 67, stdin */
+    #home-section #neve-play .fa-play-circle-o {
+      color: white; }
+  /* line 71, stdin */
   #home-section #circle-shadow {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0; }
-    /* line 38, stdin */
+    /* line 77, stdin */
     #home-section #circle-shadow img {
       width: 100%;
       height: 100%; }

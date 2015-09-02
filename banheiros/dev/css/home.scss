@@ -10,23 +10,62 @@
     background-position: 50% 50%;
     background-size: cover;
 	#novidade-breve{
-		display: inline-block;
-		width: 45%;
-		float: left;
+		#text-content{
+		    height: 118px;
+		    width: 100%;
+		    vertical-align: middle;
+		    margin-top: 60px;
+		    padding-left: 90px;
+		    padding-top: 5px;
+		    background-color: rgba(0,0,0,0.3);
+		    @include mobile-only {
+	            padding: 1px 10px;
+    			height: 108px;
+    			margin-top: 80px;
+		        h1{
+		        	font-size: 20px;
+		        }
+		        p{
+		        	font-size: 15px;
+		        }
+		    }
+		}
 		h1{
 			color: $color_primary;
+			font-size: 23.82px;
 		}
 		p{
 			color: #fff;
+			font-size: 16.78px;
+			line-height: 1.5;
+    		margin-top: -8px;
 		}
 	}
-	#model-container{
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		width: 55%;
-		img{
-			width: 100%; 
+	#model-container{	    
+	    background-image: url("../images/home/modelo_1.png");
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    background-position-x: 100%;
+	    background-position-y: 100%;
+	    height: 100%;
+	    width: 55%;
+	    position: absolute;
+	    bottom: 0;
+	    right: 0;
+	}
+	#neve-play{
+		text-align: center;
+		padding-top: 40px;
+		span{
+			font-size: 5.5em;
+			cursor: pointer;
+			z-index: 150;
+		}
+		.fa-circle{
+			color: rgba(255, 255, 255, 0.2);
+		}
+		.fa-play-circle-o{
+			color: rgba(255, 255, 255, 1);
 		}
 	}
 	#circle-shadow{
@@ -41,3 +80,5 @@
 		}
 	}
 }
+
+

@@ -4,44 +4,84 @@ html, body {
   padding: 0;
   height: 100%;
   min-height: 555px; }
+  @media (max-width: 768px) {
+    /* line 3, stdin */
+    html, body {
+      min-height: 320px; } }
 
 /******************************
             UTILS
 ******************************/
-/* line 16, stdin */
+/* line 21, stdin */
 .equidistant {
   text-align: justify;
   font-size: 0.1px; }
-  /* line 19, stdin */
+  /* line 24, stdin */
   .equidistant:after {
     content: "";
     width: 100%;
     display: inline-block; }
-  /* line 24, stdin */
+  /* line 29, stdin */
   .equidistant .equidistant-item {
     display: inline-block;
     text-align: left; }
-  /* line 28, stdin */
+  /* line 33, stdin */
   .equidistant * {
     font-size: 14px; }
 
-/* line 33, stdin */
+/* line 38, stdin */
+.absolute-middle {
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  /* line 47, stdin */
+  .absolute-middle .middle-container {
+    display: table-cell;
+    vertical-align: middle; }
+
+/* line 53, stdin */
 .cut-text {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap; }
 
+@font-face {
+  font-family: primary-font;
+  src: url(../font/SinkinSans-400Regular.otf); }
+
+/* line 65, stdin */
+.neve-font {
+  font-family: primary-font; }
+
 /******************************
             HEADER
 ******************************/
-/* line 45, stdin */
+/* line 73, stdin */
 .logo-container {
   position: absolute;
   top: 15px;
   left: 20px;
-  z-index: 150; }
+  z-index: 150;
+  height: 40%;
+  width: 15%;
+  background-image: url("../images/banheiro_logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 0%;
+  background-position-y: 0%; }
+  @media (max-width: 768px) {
+    /* line 73, stdin */
+    .logo-container {
+      width: 40%;
+      height: 40%;
+      left: 10px; } }
 
-/* line 52, stdin */
+/* line 92, stdin */
 #top-header {
   z-index: 100;
   height: 35px;
@@ -49,15 +89,30 @@ html, body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(4, 4, 4, 0.5); }
-  /* line 60, stdin */
+  background-color: rgba(4, 4, 4, 0.9); }
+  @media only screen and (min-width: 768px) {
+    /* line 101, stdin */
+    #top-header .social-container {
+      font-size: 14px; }
+    /* line 104, stdin */
+    #top-header a {
+      margin-left: 15px; } }
+  @media (max-width: 768px) {
+    /* line 92, stdin */
+    #top-header {
+      height: 50px; }
+      /* line 110, stdin */
+      #top-header .social-container {
+        font-size: 25px; }
+      /* line 113, stdin */
+      #top-header a {
+        margin-left: 35px; } }
+  /* line 117, stdin */
   #top-header .social-container {
     text-align: right;
-    padding-right: 20px; }
-    /* line 63, stdin */
-    #top-header .social-container a {
-      margin-left: 15px; }
-    /* line 66, stdin */
+    padding-right: 20px;
+    padding-top: 8px; }
+    /* line 121, stdin */
     #top-header .social-container .fa {
       color: #b99742;
       cursor: pointer; }
