@@ -1,6 +1,9 @@
 @@include('../partials/_head.html')
 
 <section id="home-section" >
+	<!--[if lt IE 9]>
+		<img src="images/home/rua.png" id="street-fallback" />
+	<![endif]-->
 	<div>
 		<div id="novidade-breve" class="absolute-middle" >
 			<div id="novidade-container" class="neve-font middle-container" >
@@ -10,7 +13,11 @@
 				</div>
 			</div>
 		</div>
-		<div id="model-container" ></div>
+		<div id="model-container" >
+			<!--[if lt IE 9]>
+				<img src="images/home/modelo_1.png" id="model-fallback" />
+			<![endif]-->
+		</div>
 
 		<div class="absolute-middle" >
 			<div class="middle-container" id="neve-play" >

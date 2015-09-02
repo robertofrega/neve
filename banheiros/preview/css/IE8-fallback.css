@@ -1,0 +1,16 @@
+/* line 2, stdin */
+#home-section #street-fallback {
+  position: fixed;
+  height: 100%;
+  width: 100%; }
+
+/* line 9, stdin */
+#model-container {
+  background-image: none !important; }
+  /* line 11, stdin */
+  #model-container #model-fallback {
+    width: 100%;
+    max-height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0; }

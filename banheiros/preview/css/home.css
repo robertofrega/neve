@@ -89,30 +89,31 @@ html, body {
   position: fixed;
   top: 0;
   left: 0;
+  background-color: #040404;
   background-color: rgba(4, 4, 4, 0.9); }
   @media only screen and (min-width: 768px) {
-    /* line 101, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+    /* line 102, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
     #top-header .social-container {
       font-size: 14px; }
-    /* line 104, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+    /* line 105, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
     #top-header a {
       margin-left: 15px; } }
   @media (max-width: 768px) {
     /* line 92, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
     #top-header {
       height: 50px; }
-      /* line 110, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+      /* line 111, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
       #top-header .social-container {
         font-size: 25px; }
-      /* line 113, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+      /* line 114, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
       #top-header a {
         margin-left: 35px; } }
-  /* line 117, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+  /* line 118, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
   #top-header .social-container {
     text-align: right;
     padding-right: 20px;
     padding-top: 8px; }
-    /* line 121, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+    /* line 122, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
     #top-header .social-container .fa {
       color: #b99742;
       cursor: pointer; }
@@ -161,36 +162,35 @@ html, body {
     background-image: url("../images/home/modelo_1.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position-x: 100%;
-    background-position-y: 100%;
+    background-position: 100% 100%;
     height: 100%;
     width: 55%;
     position: absolute;
     bottom: 0;
     right: 0; }
-  /* line 56, stdin */
+  /* line 55, stdin */
   #home-section #neve-play {
     text-align: center;
     padding-top: 60px; }
-    /* line 59, stdin */
+    /* line 58, stdin */
     #home-section #neve-play span {
       font-size: 5.5em;
       cursor: pointer;
       z-index: 150; }
-    /* line 64, stdin */
+    /* line 63, stdin */
     #home-section #neve-play .fa-circle {
       color: rgba(255, 255, 255, 0.2); }
-    /* line 67, stdin */
+    /* line 66, stdin */
     #home-section #neve-play .fa-play-circle-o {
       color: white; }
-  /* line 71, stdin */
+  /* line 70, stdin */
   #home-section #circle-shadow {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0; }
-    /* line 77, stdin */
+    /* line 76, stdin */
     #home-section #circle-shadow img {
       width: 100%;
       height: 100%; }
