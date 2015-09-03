@@ -26,12 +26,13 @@ var paths = {
 };
 
 gulp.task('clean', function(){
-    return gulp.src('preview', {read: false})
+    return gulp.src(paths.prod, {read: false})
         .pipe(clean());
 });
 
 gulp.task('copy', function(){
     return gulp.src( [
+        paths.dev + '/font/**/*',
         paths.dev + '/js/**/*',
         paths.dev + '/css/**/*.css',
         paths.dev + '/images/**/*',

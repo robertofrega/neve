@@ -135,29 +135,32 @@ html, body {
     padding-left: 90px;
     padding-top: 5px;
     background-color: rgba(0, 0, 0, 0.3); }
+    @media (max-width: 940px) {
+      /* line 13, stdin */
+      #home-section #novidade-breve #text-content {
+        padding: 1px 10px; } }
     @media (max-width: 768px) {
       /* line 13, stdin */
       #home-section #novidade-breve #text-content {
-        padding: 1px 10px;
         height: 108px;
         margin-top: 80px; }
-        /* line 25, stdin */
+        /* line 27, stdin */
         #home-section #novidade-breve #text-content h1 {
           font-size: 20px; }
-        /* line 28, stdin */
+        /* line 30, stdin */
         #home-section #novidade-breve #text-content p {
           font-size: 15px; } }
-  /* line 33, stdin */
+  /* line 35, stdin */
   #home-section #novidade-breve h1 {
     color: #b99742;
     font-size: 23.82px; }
-  /* line 37, stdin */
+  /* line 39, stdin */
   #home-section #novidade-breve p {
     color: #fff;
     font-size: 16.78px;
     line-height: 1.5;
     margin-top: -8px; }
-  /* line 44, stdin */
+  /* line 46, stdin */
   #home-section #model-container {
     background-image: url("../images/home/modelo_1.png");
     background-size: contain;
@@ -168,29 +171,47 @@ html, body {
     position: absolute;
     bottom: 0;
     right: 0; }
-  /* line 55, stdin */
+  /* line 57, stdin */
   #home-section #neve-play {
     text-align: center;
     padding-top: 60px; }
-    /* line 58, stdin */
+    @media (max-width: 768px) {
+      /* line 57, stdin */
+      #home-section #neve-play {
+        padding-top: 85px; } }
+    @media (max-width: 680px) {
+      /* line 57, stdin */
+      #home-section #neve-play {
+        font-size: 0.6em; } }
+    @media (max-width: 630px) {
+      /* line 57, stdin */
+      #home-section #neve-play {
+        padding-top: 280px;
+        text-align: left;
+        padding-left: 50px; } }
+    @media (max-width: 630px) and (max-height: 370px) {
+      /* line 57, stdin */
+      #home-section #neve-play {
+        padding-top: 230px; } }
+    /* line 74, stdin */
     #home-section #neve-play span {
       font-size: 5.5em;
       cursor: pointer;
       z-index: 150; }
-    /* line 63, stdin */
+    /* line 79, stdin */
     #home-section #neve-play .fa-circle {
       color: rgba(255, 255, 255, 0.2); }
-    /* line 66, stdin */
+    /* line 82, stdin */
     #home-section #neve-play .fa-play-circle-o {
       color: white; }
-  /* line 70, stdin */
+  /* line 86, stdin */
   #home-section #circle-shadow {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0; }
-    /* line 76, stdin */
+    /* line 92, stdin */
     #home-section #circle-shadow img {
       width: 100%;
       height: 100%; }

@@ -8,3 +8,26 @@ var View = {
 		}
 	}
 }
+
+var Media = {
+	Home: {
+		startYoutube: function(){
+			$(".youtube-media").on("click", function (e) {
+			    var jWindow = $(window).width();
+			    if ( jWindow <= 768 ) {
+			        return;
+			    }
+			    $.fancybox({
+			        href: this.href,
+			        type: "iframe"
+			    });
+			    return false;
+			});
+		}
+	}
+}
+
+
+$( document ).ready(function() {
+    Media.Home.startYoutube();
+});
