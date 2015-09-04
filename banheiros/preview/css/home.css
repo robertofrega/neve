@@ -204,18 +204,20 @@ html, body {
       z-index: 150; }
     /* line 79, stdin */
     #home-section #neve-play .fa-circle {
-      color: rgba(255, 255, 255, 0.2); }
-    /* line 82, stdin */
+      color: rgba(255, 255, 255, 0.2);
+      color: transparent; }
+    /* line 83, stdin */
     #home-section #neve-play .fa-play-circle-o {
+      color: white;
       color: white; }
-  /* line 86, stdin */
+  /* line 88, stdin */
   #home-section #circle-shadow {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0; }
-    /* line 92, stdin */
+    /* line 94, stdin */
     #home-section #circle-shadow img {
       width: 100%;
       height: 100%; }

@@ -78,9 +78,11 @@
 		}
 		.fa-circle{
 			color: rgba(255, 255, 255, 0.2);
+			color: transparent;
 		}
 		.fa-play-circle-o{
 			color: rgba(255, 255, 255, 1);
+			color: rgb(255, 255, 255);
 		}
 	}
 	#circle-shadow{
