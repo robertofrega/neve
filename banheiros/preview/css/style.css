@@ -117,3 +117,7 @@ html, body {
     #top-header .social-container .fa {
       color: #b99742;
       cursor: pointer; }
+
+/* line 136, stdin */
+*:focus {
+  outline: none; }

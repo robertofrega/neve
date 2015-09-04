@@ -118,6 +118,10 @@ html, body {
       color: #b99742;
       cursor: pointer; }
 
+/* line 136, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+*:focus {
+  outline: none; }
+
 /* line 5, stdin */
 #home-section {
   position: relative;

@@ -29,5 +29,5 @@ var Media = {
 
 
 $( document ).ready(function() {
-    Media.Home.startYoutube();
+    //Media.Home.startYoutube();
 });
