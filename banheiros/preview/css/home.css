@@ -1,35 +1,39 @@
-/* line 3, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+/* line 3, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   min-height: 555px; }
   @media (max-width: 768px) {
-    /* line 3, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+    /* line 3, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
     html, body {
       min-height: 320px; } }
+
+/* line 13, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
+* {
+  text-decoration: none; }
 
 /******************************
             UTILS
 ******************************/
-/* line 21, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+/* line 24, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
 .equidistant {
   text-align: justify;
   font-size: 0.1px; }
-  /* line 24, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+  /* line 27, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
   .equidistant:after {
     content: "";
     width: 100%;
     display: inline-block; }
-  /* line 29, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+  /* line 32, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
   .equidistant .equidistant-item {
     display: inline-block;
     text-align: left; }
-  /* line 33, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+  /* line 36, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
   .equidistant * {
     font-size: 14px; }
 
-/* line 38, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+/* line 41, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
 .absolute-middle {
   display: table;
   width: 100%;
@@ -39,12 +43,12 @@ html, body {
   bottom: 0;
   left: 0;
   right: 0; }
-  /* line 47, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+  /* line 50, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
   .absolute-middle .middle-container {
     display: table-cell;
     vertical-align: middle; }
 
-/* line 53, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+/* line 56, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
 .cut-text {
   text-overflow: ellipsis;
   overflow: hidden;
@@ -52,21 +56,21 @@ html, body {
 
 @font-face {
   font-family: primary-font;
-  src: url(../font/SinkinSans-400Regular.otf); }
+  src: url(../font/SinkinSans-300Light.otf); }
 
-/* line 65, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+/* line 68, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
 .neve-font {
   font-family: primary-font; }
 
 /******************************
             HEADER
 ******************************/
-/* line 73, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+/* line 76, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
 .logo-container {
   position: absolute;
   top: 15px;
   left: 20px;
-  z-index: 150;
+  z-index: 2147483647;
   height: 40%;
   width: 15%;
   background-image: url("../images/banheiro_logo.png");
@@ -75,13 +79,14 @@ html, body {
   background-position-x: 0%;
   background-position-y: 0%; }
   @media (max-width: 768px) {
-    /* line 73, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+    /* line 76, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
     .logo-container {
-      width: 40%;
+      width: 100%;
       height: 40%;
+      background-position-x: center;
       left: 10px; } }
 
-/* line 92, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+/* line 96, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
 #top-header {
   z-index: 100;
   height: 35px;
@@ -90,35 +95,33 @@ html, body {
   top: 0;
   left: 0;
   background-color: #040404;
-  background-color: rgba(4, 4, 4, 0.9); }
-  @media only screen and (min-width: 768px) {
-    /* line 102, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
-    #top-header .social-container {
-      font-size: 14px; }
-    /* line 105, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
-    #top-header a {
-      margin-left: 15px; } }
+  background-color: rgba(4, 4, 4, 0.9);
+  height: 50px; }
   @media (max-width: 768px) {
-    /* line 92, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+    /* line 96, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
     #top-header {
       height: 50px; }
-      /* line 111, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+      /* line 108, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
       #top-header .social-container {
         font-size: 25px; }
-      /* line 114, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+      /* line 111, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
       #top-header a {
         margin-left: 35px; } }
-  /* line 118, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+  /* line 115, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
   #top-header .social-container {
+    font-size: 25px;
     text-align: right;
     padding-right: 20px;
     padding-top: 8px; }
-    /* line 122, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
-    #top-header .social-container .fa {
+    /* line 117, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
+    #top-header .social-container a {
+      margin-left: 20px; }
+    /* line 123, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
+    #top-header .social-container .icon-facebook, #top-header .social-container .icon-twitter {
       color: #b99742;
       cursor: pointer; }
 
-/* line 136, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+/* line 137, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
 *:focus {
   outline: none; }
 
@@ -147,7 +150,7 @@ html, body {
       /* line 13, stdin */
       #home-section #novidade-breve #text-content {
         height: 108px;
-        margin-top: 80px; }
+        margin-top: 10px; }
         /* line 27, stdin */
         #home-section #novidade-breve #text-content h1 {
           font-size: 20px; }
@@ -157,14 +160,17 @@ html, body {
   /* line 35, stdin */
   #home-section #novidade-breve h1 {
     color: #b99742;
-    font-size: 23.82px; }
-  /* line 39, stdin */
+    font-size: 23.82px;
+    margin-bottom: 10px;
+    margin-top: 10px; }
+  /* line 41, stdin */
   #home-section #novidade-breve p {
     color: #fff;
     font-size: 16.78px;
     line-height: 1.5;
-    margin-top: -8px; }
-  /* line 46, stdin */
+    margin-top: -8px;
+    padding-left: 1px; }
+  /* line 49, stdin */
   #home-section #model-container {
     background-image: url("../images/home/modelo_1.png");
     background-size: contain;
@@ -175,49 +181,59 @@ html, body {
     position: absolute;
     bottom: 0;
     right: 0; }
-  /* line 57, stdin */
+    @media (max-width: 768px) {
+      /* line 49, stdin */
+      #home-section #model-container {
+        background-position-x: 50%;
+        width: 99%;
+        height: 40%; } }
+  /* line 65, stdin */
   #home-section #neve-play {
     text-align: center;
-    padding-top: 60px; }
+    padding-top: 85px;
+    /*@media (max-width : 680px) {
+			font-size: 0.6em;
+	    }
+	    @media (max-width : 630px){
+		    padding-top: 30px;
+		    text-align: right;
+		    padding-right: 10px;
+	    }
+	    @media (max-width : 630px) and (max-height : 370px){
+	    	font-size: 0.5em;
+		    padding-top: 230px;
+	    }*/ }
     @media (max-width: 768px) {
-      /* line 57, stdin */
+      /* line 65, stdin */
       #home-section #neve-play {
-        padding-top: 85px; } }
-    @media (max-width: 680px) {
-      /* line 57, stdin */
-      #home-section #neve-play {
-        font-size: 0.6em; } }
-    @media (max-width: 630px) {
-      /* line 57, stdin */
-      #home-section #neve-play {
-        padding-top: 280px;
-        text-align: left;
-        padding-left: 50px; } }
-    @media (max-width: 630px) and (max-height: 370px) {
-      /* line 57, stdin */
-      #home-section #neve-play {
-        padding-top: 230px; } }
-    /* line 74, stdin */
+        /*padding-top: 95px;*/
+        font-size: 0.5em;
+        text-align: right;
+        padding-right: 30px; } }
+    /* line 87, stdin */
     #home-section #neve-play span {
-      font-size: 5.5em;
+      font-size: 9.3em;
       cursor: pointer;
-      z-index: 150; }
-    /* line 79, stdin */
-    #home-section #neve-play .fa-circle {
+      z-index: 150;
+      position: relative; }
+    /* line 93, stdin */
+    #home-section #neve-play .icon-radio-checked2 {
+      color: transparent;
       color: rgba(255, 255, 255, 0.2);
-      color: transparent; }
-    /* line 83, stdin */
-    #home-section #neve-play .fa-play-circle-o {
+      position: absolute;
+      top: 0; }
+    /* line 99, stdin */
+    #home-section #neve-play .icon-play2 {
       color: white;
       color: white; }
-  /* line 88, stdin */
+  /* line 104, stdin */
   #home-section #circle-shadow {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0; }
-    /* line 94, stdin */
+    /* line 110, stdin */
     #home-section #circle-shadow img {
       width: 100%;
       height: 100%; }

@@ -23,9 +23,9 @@
 		    }
 		    @include mobile-only {
     			height: 108px;
-    			margin-top: 80px;
+    			margin-top: 10px;
 		        h1{
-		        	font-size: 20px;
+		        	font-size: 20px; 
 		        }
 		        p{
 		        	font-size: 15px;
@@ -35,12 +35,15 @@
 		h1{
 			color: $color_primary;
 			font-size: 23.82px;
+			margin-bottom: 10px;
+			margin-top: 10px;
 		}
 		p{
 			color: #fff;
 			font-size: 16.78px;
 			line-height: 1.5;
     		margin-top: -8px;
+    		padding-left: 1px;
 		}
 	}
 	#model-container{	    
@@ -53,36 +56,49 @@
 	    position: absolute;
 	    bottom: 0;
 	    right: 0;
+	    @include mobile-only{
+	    	background-position-x: 50%;
+	    	width: 99%;
+	    	height: 40%;
+	    }
 	}
 	#neve-play{
 		text-align: center;
-		padding-top: 60px;
+		padding-top: 85px;
 		@include mobile-only{
-			padding-top: 85px;
+			/*padding-top: 95px;*/
+			
+			font-size: 0.5em;
+			text-align: right;
+			padding-right: 30px;
 		}
-		@media (max-width : 680px) {
+		/*@media (max-width : 680px) {
 			font-size: 0.6em;
 	    }
 	    @media (max-width : 630px){
-		    padding-top: 280px;
-		    text-align: left;
-		    padding-left: 50px;
+		    padding-top: 30px;
+		    text-align: right;
+		    padding-right: 10px;
 	    }
 	    @media (max-width : 630px) and (max-height : 370px){
+	    	font-size: 0.5em;
 		    padding-top: 230px;
-	    }
+	    }*/
 		span{
-			font-size: 5.5em;
+			font-size: 9.3em;
 			cursor: pointer;
 			z-index: 150;
+			position: relative;
 		}
-		.fa-circle{
-			color: rgba(255, 255, 255, 0.2);
+		.icon-radio-checked2{
 			color: transparent;
+			color: rgba(255, 255, 255, 0.2);
+			position: absolute;
+			top: 0;
 		}
-		.fa-play-circle-o{
-			color: rgba(255, 255, 255, 1);
+		.icon-play2{
 			color: rgb(255, 255, 255);
+			color: rgba(255, 255, 255, 1);
 		}
 	}
 	#circle-shadow{

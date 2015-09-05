@@ -29,5 +29,12 @@ var Media = {
 
 
 $( document ).ready(function() {
-    //Media.Home.startYoutube();
+    // Bind to the shown event.
+	$("#neve-play a").on("shown.r.modal", function(event) {
+	    $(this).fadeOut(300);
+	});
+	// Bind to the hide event.
+	$("#neve-play a").on("hide.r.modal", function(event) {
+	    $(this).fadeIn(300);
+	});
 });
