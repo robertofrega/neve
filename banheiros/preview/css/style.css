@@ -70,7 +70,7 @@ html, body {
   position: absolute;
   top: 15px;
   left: 20px;
-  z-index: 2147483647;
+  z-index: 214748348;
   height: 40%;
   width: 15%;
   background-image: url("../images/banheiro_logo.png");

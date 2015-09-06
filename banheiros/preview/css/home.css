@@ -70,7 +70,7 @@ html, body {
   position: absolute;
   top: 15px;
   left: 20px;
-  z-index: 2147483647;
+  z-index: 214748348;
   height: 40%;
   width: 15%;
   background-image: url("../images/banheiro_logo.png");
@@ -150,27 +150,33 @@ html, body {
       /* line 13, stdin */
       #home-section #novidade-breve #text-content {
         height: 108px;
-        margin-top: 10px; }
-        /* line 27, stdin */
+        margin-top: 10px;
+        text-align: center; }
+        /* line 28, stdin */
+        #home-section #novidade-breve #text-content #text-aligner {
+          text-align: left;
+          width: 310px;
+          display: inline-block; }
+        /* line 33, stdin */
         #home-section #novidade-breve #text-content h1 {
           font-size: 20px; }
-        /* line 30, stdin */
+        /* line 36, stdin */
         #home-section #novidade-breve #text-content p {
           font-size: 15px; } }
-  /* line 35, stdin */
+  /* line 41, stdin */
   #home-section #novidade-breve h1 {
     color: #b99742;
     font-size: 23.82px;
     margin-bottom: 10px;
     margin-top: 10px; }
-  /* line 41, stdin */
+  /* line 47, stdin */
   #home-section #novidade-breve p {
     color: #fff;
     font-size: 16.78px;
     line-height: 1.5;
     margin-top: -8px;
     padding-left: 1px; }
-  /* line 49, stdin */
+  /* line 55, stdin */
   #home-section #model-container {
     background-image: url("../images/home/modelo_1.png");
     background-size: contain;
@@ -182,12 +188,12 @@ html, body {
     bottom: 0;
     right: 0; }
     @media (max-width: 768px) {
-      /* line 49, stdin */
+      /* line 55, stdin */
       #home-section #model-container {
         background-position-x: 50%;
         width: 99%;
         height: 40%; } }
-  /* line 65, stdin */
+  /* line 71, stdin */
   #home-section #neve-play {
     text-align: center;
     padding-top: 85px;
@@ -204,36 +210,40 @@ html, body {
 		    padding-top: 230px;
 	    }*/ }
     @media (max-width: 768px) {
-      /* line 65, stdin */
+      /* line 71, stdin */
       #home-section #neve-play {
         /*padding-top: 95px;*/
         font-size: 0.5em;
         text-align: right;
-        padding-right: 30px; } }
-    /* line 87, stdin */
+        padding-right: 30px;
+        text-align: center; }
+        /* line 82, stdin */
+        #home-section #neve-play a {
+          margin-left: 200px; } }
+    /* line 98, stdin */
     #home-section #neve-play span {
       font-size: 9.3em;
       cursor: pointer;
       z-index: 150;
       position: relative; }
-    /* line 93, stdin */
+    /* line 104, stdin */
     #home-section #neve-play .icon-radio-checked2 {
       color: transparent;
       color: rgba(255, 255, 255, 0.2);
       position: absolute;
       top: 0; }
-    /* line 99, stdin */
+    /* line 110, stdin */
     #home-section #neve-play .icon-play2 {
       color: white;
       color: white; }
-  /* line 104, stdin */
+  /* line 115, stdin */
   #home-section #circle-shadow {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0; }
-    /* line 110, stdin */
+    /* line 121, stdin */
     #home-section #circle-shadow img {
       width: 100%;
       height: 100%; }

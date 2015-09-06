@@ -24,6 +24,12 @@
 		    @include mobile-only {
     			height: 108px;
     			margin-top: 10px;
+    			text-align: center;
+    			#text-aligner{
+				    text-align: left;
+				    width: 310px;
+				    display: inline-block;
+    			}
 		        h1{
 		        	font-size: 20px; 
 		        }
@@ -71,6 +77,11 @@
 			font-size: 0.5em;
 			text-align: right;
 			padding-right: 30px;
+			
+			text-align: center;
+			a{
+				margin-left: 200px;
+			}
 		}
 		/*@media (max-width : 680px) {
 			font-size: 0.6em;
@@ -88,7 +99,7 @@
 			font-size: 9.3em;
 			cursor: pointer;
 			z-index: 150;
-			position: relative;
+			position: relative; 
 		}
 		.icon-radio-checked2{
 			color: transparent;

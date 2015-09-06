@@ -23,6 +23,9 @@ var Media = {
 			    });
 			    return false;
 			});
+		},
+		closeModal: function(){
+			$('#neve-play a').modal('hide');
 		}
 	}
 }
@@ -30,11 +33,14 @@ var Media = {
 
 $( document ).ready(function() {
     // Bind to the shown event.
-	$("#neve-play a").on("shown.r.modal", function(event) {
-	    $(this).fadeOut(300);
+	/*$("#neve-play a").on("shown.r.modal", function(event) {
+	    $(this).stop().fadeOut(300);
 	});
 	// Bind to the hide event.
 	$("#neve-play a").on("hide.r.modal", function(event) {
-	    $(this).fadeIn(300);
-	});
+	    $(this).stop().fadeIn(300);
+	});*/
+	$('.logo-container').on('click', function(){
+		Media.Home.closeModal();
+	})
 });
