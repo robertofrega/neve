@@ -73,7 +73,7 @@ html, body {
   z-index: 214748348;
   height: 40%;
   width: 15%;
-  background-image: url("../images/banheiros-espetaculares-neve-2015.png");
+  background-image: url("../images/banheiros-espetaculares-2015-edicao-oscar-freire.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position-x: 0%;
@@ -132,7 +132,7 @@ html, body {
 #home-section {
   position: relative;
   height: 100%;
-  background-image: url("../images/home/rua-oscar-freire.png");
+  background-image: url("../images/home/rua-oscar-freire-sao-paulo.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover; }
