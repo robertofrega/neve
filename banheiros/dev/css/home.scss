@@ -5,10 +5,13 @@
 #home-section{
 	position: relative;
 	height: 100%;
-	background-image: url('../images/home/rua.png');
+	background-image: url('../images/home/rua-oscar-freire.png');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
+    & > img{
+    	display: none;
+    }
 	#novidade-breve{
 		#text-content{
 		    height: 118px;
@@ -53,7 +56,7 @@
 		}
 	}
 	#model-container{	    
-	    background-image: url("../images/home/modelo_1.png");
+	    background-image: url("../images/home/ingrid-guimaraes-banheiros-espetaculares-neve.png");
 	    background-size: contain;
 	    background-repeat: no-repeat;
 	    background-position: 100% 100%;
@@ -62,6 +65,9 @@
 	    position: absolute;
 	    bottom: 0;
 	    right: 0;
+	    img{
+	    	display: none;
+	    }
 	    @include mobile-only{
 	    	background-position-x: 50%;
 	    	width: 99%;

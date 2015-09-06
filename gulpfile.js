@@ -36,7 +36,7 @@ gulp.task('copy', function(){
         paths.dev + '/js/**/*',
         paths.dev + '/css/**/*.css',
         paths.dev + '/images/**/*',
-        paths.dev + '/favicon.png',
+        paths.dev + '/*.*',
 
     ], {'base' : paths.dev })
         .pipe(gulp.dest(paths.prod));

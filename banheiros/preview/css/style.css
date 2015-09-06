@@ -73,11 +73,14 @@ html, body {
   z-index: 214748348;
   height: 40%;
   width: 15%;
-  background-image: url("../images/banheiro_logo.png");
+  background-image: url("../images/banheiros-espetaculares-neve-2015.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position-x: 0%;
   background-position-y: 0%; }
+  /* line 88, stdin */
+  .logo-container img {
+    display: none; }
   @media (max-width: 768px) {
     /* line 76, stdin */
     .logo-container {
@@ -86,7 +89,7 @@ html, body {
       background-position-x: center;
       left: 10px; } }
 
-/* line 96, stdin */
+/* line 99, stdin */
 #top-header {
   z-index: 100;
   height: 35px;
@@ -98,29 +101,29 @@ html, body {
   background-color: rgba(4, 4, 4, 0.9);
   height: 50px; }
   @media (max-width: 768px) {
-    /* line 96, stdin */
+    /* line 99, stdin */
     #top-header {
       height: 50px; }
-      /* line 108, stdin */
+      /* line 111, stdin */
       #top-header .social-container {
         font-size: 25px; }
-      /* line 111, stdin */
+      /* line 114, stdin */
       #top-header a {
         margin-left: 35px; } }
-  /* line 115, stdin */
+  /* line 118, stdin */
   #top-header .social-container {
     font-size: 25px;
     text-align: right;
     padding-right: 20px;
     padding-top: 8px; }
-    /* line 117, stdin */
+    /* line 120, stdin */
     #top-header .social-container a {
       margin-left: 20px; }
-    /* line 123, stdin */
+    /* line 126, stdin */
     #top-header .social-container .icon-facebook, #top-header .social-container .icon-twitter {
       color: #b99742;
       cursor: pointer; }
 
-/* line 137, stdin */
+/* line 140, stdin */
 *:focus {
   outline: none; }

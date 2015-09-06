@@ -1,0 +1,3 @@
+sitemap: http://www.marcaneve.com.br/banheirosespetaculares/sitemap.xml
+
+user agent:*

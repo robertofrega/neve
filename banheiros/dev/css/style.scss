@@ -80,11 +80,14 @@ $color_primary: #b99742;
     z-index: 214748348;
     height: 40%;
     width:15%;
-    background-image: url("../images/banheiro_logo.png");
+    background-image: url("../images/banheiros-espetaculares-neve-2015.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: 0%;
     background-position-y: 0%;
+    img{
+        display: none;
+    }
     @include mobile-only {
         width: 100%;
         height: 40%;

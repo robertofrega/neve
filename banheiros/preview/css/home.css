@@ -73,11 +73,14 @@ html, body {
   z-index: 214748348;
   height: 40%;
   width: 15%;
-  background-image: url("../images/banheiro_logo.png");
+  background-image: url("../images/banheiros-espetaculares-neve-2015.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position-x: 0%;
   background-position-y: 0%; }
+  /* line 88, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
+  .logo-container img {
+    display: none; }
   @media (max-width: 768px) {
     /* line 76, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
     .logo-container {
@@ -86,7 +89,7 @@ html, body {
       background-position-x: center;
       left: 10px; } }
 
-/* line 96, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
+/* line 99, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
 #top-header {
   z-index: 100;
   height: 35px;
@@ -98,30 +101,30 @@ html, body {
   background-color: rgba(4, 4, 4, 0.9);
   height: 50px; }
   @media (max-width: 768px) {
-    /* line 96, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
+    /* line 99, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
     #top-header {
       height: 50px; }
-      /* line 108, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
+      /* line 111, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
       #top-header .social-container {
         font-size: 25px; }
-      /* line 111, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
+      /* line 114, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
       #top-header a {
         margin-left: 35px; } }
-  /* line 115, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
+  /* line 118, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
   #top-header .social-container {
     font-size: 25px;
     text-align: right;
     padding-right: 20px;
     padding-top: 8px; }
-    /* line 117, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
+    /* line 120, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
     #top-header .social-container a {
       margin-left: 20px; }
-    /* line 123, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
+    /* line 126, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
     #top-header .social-container .icon-facebook, #top-header .social-container .icon-twitter {
       color: #b99742;
       cursor: pointer; }
 
-/* line 137, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
+/* line 140, /home/ubuntu/workspace/banheiros/dev/css/style.scss */
 *:focus {
   outline: none; }
 
@@ -129,11 +132,14 @@ html, body {
 #home-section {
   position: relative;
   height: 100%;
-  background-image: url("../images/home/rua.png");
+  background-image: url("../images/home/rua-oscar-freire.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover; }
-  /* line 13, stdin */
+  /* line 12, stdin */
+  #home-section > img {
+    display: none; }
+  /* line 16, stdin */
   #home-section #novidade-breve #text-content {
     height: 118px;
     width: 100%;
@@ -143,42 +149,42 @@ html, body {
     padding-top: 5px;
     background-color: rgba(0, 0, 0, 0.3); }
     @media (max-width: 940px) {
-      /* line 13, stdin */
+      /* line 16, stdin */
       #home-section #novidade-breve #text-content {
         padding: 1px 10px; } }
     @media (max-width: 768px) {
-      /* line 13, stdin */
+      /* line 16, stdin */
       #home-section #novidade-breve #text-content {
         height: 108px;
         margin-top: 10px;
         text-align: center; }
-        /* line 28, stdin */
+        /* line 31, stdin */
         #home-section #novidade-breve #text-content #text-aligner {
           text-align: left;
           width: 310px;
           display: inline-block; }
-        /* line 33, stdin */
+        /* line 36, stdin */
         #home-section #novidade-breve #text-content h1 {
           font-size: 20px; }
-        /* line 36, stdin */
+        /* line 39, stdin */
         #home-section #novidade-breve #text-content p {
           font-size: 15px; } }
-  /* line 41, stdin */
+  /* line 44, stdin */
   #home-section #novidade-breve h1 {
     color: #b99742;
     font-size: 23.82px;
     margin-bottom: 10px;
     margin-top: 10px; }
-  /* line 47, stdin */
+  /* line 50, stdin */
   #home-section #novidade-breve p {
     color: #fff;
     font-size: 16.78px;
     line-height: 1.5;
     margin-top: -8px;
     padding-left: 1px; }
-  /* line 55, stdin */
+  /* line 58, stdin */
   #home-section #model-container {
-    background-image: url("../images/home/modelo_1.png");
+    background-image: url("../images/home/ingrid-guimaraes-banheiros-espetaculares-neve.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 100% 100%;
@@ -187,13 +193,16 @@ html, body {
     position: absolute;
     bottom: 0;
     right: 0; }
+    /* line 68, stdin */
+    #home-section #model-container img {
+      display: none; }
     @media (max-width: 768px) {
-      /* line 55, stdin */
+      /* line 58, stdin */
       #home-section #model-container {
         background-position-x: 50%;
         width: 99%;
         height: 40%; } }
-  /* line 71, stdin */
+  /* line 77, stdin */
   #home-section #neve-play {
     text-align: center;
     padding-top: 85px;
@@ -210,40 +219,40 @@ html, body {
 		    padding-top: 230px;
 	    }*/ }
     @media (max-width: 768px) {
-      /* line 71, stdin */
+      /* line 77, stdin */
       #home-section #neve-play {
         /*padding-top: 95px;*/
         font-size: 0.5em;
         text-align: right;
         padding-right: 30px;
         text-align: center; }
-        /* line 82, stdin */
+        /* line 88, stdin */
         #home-section #neve-play a {
           margin-left: 200px; } }
-    /* line 98, stdin */
+    /* line 104, stdin */
     #home-section #neve-play span {
       font-size: 9.3em;
       cursor: pointer;
       z-index: 150;
       position: relative; }
-    /* line 104, stdin */
+    /* line 110, stdin */
     #home-section #neve-play .icon-radio-checked2 {
       color: transparent;
       color: rgba(255, 255, 255, 0.2);
       position: absolute;
       top: 0; }
-    /* line 110, stdin */
+    /* line 116, stdin */
     #home-section #neve-play .icon-play2 {
       color: white;
       color: white; }
-  /* line 115, stdin */
+  /* line 121, stdin */
   #home-section #circle-shadow {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0; }
-    /* line 121, stdin */
+    /* line 127, stdin */
     #home-section #circle-shadow img {
       width: 100%;
       height: 100%; }
