@@ -11,6 +11,9 @@ var gulp = require('gulp'),
     connect = require('gulp-connect'),
     plumber = require('gulp-plumber'),
     autoprefixer = require('gulp-autoprefixer'),
+    uglify = require('gulp-uglify'),
+    minifyCss = require('gulp-minify-css'),
+    minifyHTML = require('gulp-minify-html'),
     server = lr(),
     path = require("path"),
     runSequence = require('run-sequence');
@@ -25,10 +28,38 @@ var paths = {
   css: working + 'preview/css',
 };
 
-gulp.task('clean', function(){
-    return gulp.src(paths.prod, {read: false})
-        .pipe(clean());
+gulp.task('uglify-js', function() {
+  return gulp.src( [
+        paths.prod + '/js/**/*.js',
+
+    ], {'base' : paths.prod })
+    .pipe(uglify())
+    .pipe(gulp.dest(paths.prod));
 });
+
+gulp.task('minify-css', function() {
+  return gulp.src( [
+        paths.prod + '/css/**/*.css',
+
+    ], {'base' : paths.prod })
+    .pipe(minifyCss({compatibility: 'ie8'}))
+    .pipe(gulp.dest(paths.prod));
+});
+
+gulp.task('minify-html', function() {
+  var opts = {
+    conditionals: true,
+    spare:true
+  };
+ 
+  return gulp.src( [
+        paths.prod + '/**/*.html',
+
+    ], {'base' : paths.prod })
+    .pipe(minifyHTML(opts))
+    .pipe(gulp.dest(paths.prod));
+});
+
 
 gulp.task('copy', function(){
     return gulp.src( [
@@ -98,6 +129,20 @@ gulp.task('watch', function() {
 
 //  Default Gulp Task
 //===========================================
-gulp.task('default', ['fileinclude', 'sass', 'copy', 'connect', 'watch'], function() {
+gulp.task('default', ['build', 'connect', 'watch'], function() {
 
+});
+
+
+gulp.task('clean', function(){
+    return gulp.src(paths.prod, {read: false})
+        .pipe(clean());
+});
+
+gulp.task('build',['fileinclude', 'sass', 'copy'], function() {
+
+});
+
+gulp.task('minify-all', ['uglify-js','minify-css','minify-html'], function(){
+  
 });
