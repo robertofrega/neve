@@ -92,7 +92,7 @@ $color_primary: #b99742;
     @include mobile-only {
         width: 100%;
         height: 40%;
-        background-position-x: center;
+        background-position: 50% 0%;
         left: 10px;
     }
 }
