@@ -1,10 +1,1 @@
-@media (max-width: 768px) {
-  /******************************
-            UTILS
-******************************/
-  /* line 9, stdin */
-  .neve-desktop {
-    display: none; }
-  /******************************
-            PARTS
-******************************/ }
+@media (max-width:768px){.neve-desktop{display:none}}
