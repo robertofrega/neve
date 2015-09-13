@@ -88,6 +88,9 @@
 			a{
 				margin-left: 200px;
 			}
+			.icon-radio-checked2{
+				top: -3px !important;
+			}
 		}
 		/*@media (max-width : 680px) {
 			font-size: 0.6em;
@@ -111,7 +114,7 @@
 			color: transparent;
 			color: rgba(255, 255, 255, 0.2);
 			position: absolute;
-			top: 0;
+			top: -6px;
 		}
 		.icon-play2{
 			color: rgb(255, 255, 255);
