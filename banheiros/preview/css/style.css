@@ -88,7 +88,7 @@ html, body {
       width: 100%;
       height: 40%;
       background-position: 50% 0%;
-      left: 10px; } }
+      left: 0px; } }
 
 /* line 100, stdin */
 #top-header {
@@ -124,7 +124,12 @@ html, body {
     #top-header .social-container .icon-facebook, #top-header .social-container .icon-twitter {
       color: #b99742;
       cursor: pointer; }
+    /* line 131, stdin */
+    #top-header .social-container .icon-twitter {
+      top: 3px;
+      position: relative;
+      font-size: 95%; }
 
-/* line 141, stdin */
+/* line 146, stdin */
 *:focus {
   outline: none; }
