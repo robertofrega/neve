@@ -16,22 +16,26 @@
 		#text-content{
 		    height: 118px;
 		    width: 100%;
+		    text-align: center;
 		    vertical-align: middle;
 		    margin-top: 60px;
 		    padding-left: 90px;
 		    padding-top: 5px;
 		    background-color: rgba(0,0,0,0.75);
+		    #text-aligner{
+		    	display: inline-block;
+			    text-align: left;
+			    margin-left: -570px;
+		    }
 		    @media (max-width : 940px) {
-		        padding: 1px 10px;
+		        padding-top: 1px;
 		    }
 		    @include mobile-only {
     			height: 108px;
     			margin-top: 10px; 
     			text-align: center;
     			#text-aligner{
-				    text-align: left;
 				    width: 310px;
-				    display: inline-block;
     			}
 		        h1{
 		        	font-size: 20px; 
