@@ -28,10 +28,15 @@
     width: 100%;
     display: block; }
 
-/* line 33, stdin */
+@media (max-width: 768px) {
+  /* line 35, stdin */
+  #neve-play a {
+    margin-left: 200px; } }
+
+/* line 41, stdin */
 #model-container {
   background-image: none !important; }
-  /* line 35, stdin */
+  /* line 43, stdin */
   #model-container #model-fallback {
     width: 100%;
     max-height: 100%;

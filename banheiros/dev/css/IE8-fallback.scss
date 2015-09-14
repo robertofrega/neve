@@ -30,6 +30,14 @@
     }
 }
 
+#neve-play{
+	@include mobile-only{
+		a{
+			margin-left: 200px;
+		}
+	}
+}
+
 #model-container{	
 	background-image: none !important;
 	#model-fallback{
