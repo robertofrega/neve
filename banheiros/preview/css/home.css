@@ -71,7 +71,8 @@ html, body {
   position: absolute;
   top: 15px;
   left: 20px;
-  z-index: 214748348;
+  /*z-index: 214748348;*/
+  z-index: 300;
   height: 40%;
   width: 15%;
   background-image: url("../images/banheiros-espetaculares-2015-edicao-oscar-freire.svg");
@@ -79,7 +80,7 @@ html, body {
   background-repeat: no-repeat;
   background-position-x: 0%;
   background-position-y: 0%; }
-  /* line 89, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+  /* line 90, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
   .logo-container img {
     display: none; }
   @media (max-width: 768px) {
@@ -90,7 +91,7 @@ html, body {
       background-position: 50% 0%;
       left: 0px; } }
 
-/* line 100, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+/* line 101, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
 #top-header {
   z-index: 100;
   height: 35px;
@@ -102,35 +103,35 @@ html, body {
   background-color: rgba(4, 4, 4, 0.9);
   height: 50px; }
   @media (max-width: 768px) {
-    /* line 100, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+    /* line 101, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
     #top-header {
       height: 50px; }
-      /* line 112, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+      /* line 113, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
       #top-header .social-container {
         font-size: 25px; }
-      /* line 115, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+      /* line 116, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
       #top-header a {
         margin-left: 35px; } }
-  /* line 119, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+  /* line 120, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
   #top-header .social-container {
     font-size: 25px;
     text-align: right;
     padding-right: 20px;
     padding-top: 8px; }
-    /* line 121, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+    /* line 122, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
     #top-header .social-container a {
       margin-left: 20px; }
-    /* line 127, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+    /* line 128, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
     #top-header .social-container .icon-facebook, #top-header .social-container .icon-twitter {
       color: #b99742;
       cursor: pointer; }
-    /* line 131, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+    /* line 132, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
     #top-header .social-container .icon-twitter {
       top: 3px;
       position: relative;
       font-size: 95%; }
 
-/* line 146, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+/* line 147, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
 *:focus {
   outline: none; }
 

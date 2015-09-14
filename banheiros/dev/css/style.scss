@@ -78,7 +78,8 @@ $color_primary: #b99742;
     position: absolute;
     top: 15px;
     left: 20px;
-    z-index: 214748348;
+    /*z-index: 214748348;*/
+    z-index: 300;
     height: 40%;
     width:15%;
     background-image: url("../images/banheiros-espetaculares-2015-edicao-oscar-freire.svg");
