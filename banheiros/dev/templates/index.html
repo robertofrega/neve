@@ -1,44 +1,58 @@
 @@include('../partials/_head.html')
 
-<section id="home-section" >
+<section id="home-section">
 
-	<img src="images/home/rua-oscar-freire-sao-paulo.png" alt="Rua Oscar Freire, São Paulo" id="street-fallback" />
+    <img src="images/home/rua-oscar-freire-sao-paulo.png" alt="Rua Oscar Freire, São Paulo" id="street-fallback"/>
 
-	<div>
-		<div id="novidade-breve" class="absolute-middle" >
-			<div id="novidade-container" class="neve-font middle-container" >
-				<div id="text-content" >
-					<div id="text-aligner">
-						<h2>VEM NOVIDADE POR AÍ</h2>
-						<p>VOLTE AQUI EM BREVE<br>PARA DESCOBRIR.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="model-container" > 
-			<img src="images/home/ingrid-guimaraes-banheiros-espetaculares-neve.png" alt="Ingrid Guimarães - Banheiros Espetaculares Neve" id="model-fallback" />
-		</div>
- 
-		<div class="absolute-middle" >
-			<div class="middle-container" id="neve-play" >
-				<a data-modal-title=" " data-modal-mobile-viewport-width="s" href="https://www.youtube.com/embed/XhVV5lUtlbc?autoplay=1&wmode=opaque&rel=0">
-					<!--[if !IE 8]><!-->
-						<img src="images/home/play.svg" id="neve-play-button">
-					<!--<![endif]-->
-					<!--[if IE 8]>
-						<span class="fa-stack fa-lg">
+    <div>
+        <div id="novidade-breve" class="absolute-middle">
+            <div id="novidade-container" class="neve-font middle-container">
+                <div id="text-content">
+                    <div id="text-aligner">
+                        <h2>VEM NOVIDADE POR AÍ</h2>
+
+                        <p>VOLTE AQUI EM BREVE<br>PARA DESCOBRIR.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="model-container">
+            <img src="images/home/ingrid-guimaraes-banheiros-espetaculares-neve.png"
+                 alt="Ingrid Guimarães - Banheiros Espetaculares Neve" id="model-fallback"/>
+        </div>
+
+        <div class="absolute-middle">
+            <div class="middle-container" id="neve-play">
+                <a href="https://www.youtube.com/watch?v=XhVV5lUtlbc">
+                    <!--[if !IE 8]><!-->
+                    <img src="images/home/play.svg" id="neve-play-button">
+                    <!--<![endif]-->
+                    <!--[if IE 8]>
+                    <span class="fa-stack fa-lg">
 							<i class="icon-radio-checked2"></i>
 							<i class="icon-play2"></i>
 						</span>
-					<![endif]-->
-				</a>
-			</div> 
-		</div>
-	</div> 
-	<div id="circle-shadow" >
-		<img src="images/home/circle_shadow.png" id="circle-shadow" />
-	</div>
+                    <![endif]-->
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div id="circle-shadow">
+        <img src="images/home/circle_shadow.png"/>
+    </div>
 </section>
 
+<section id="video-modal" class="hidden">
+    <a href="#close" class="close neve-font">
+        X
+    </a>
+
+    <div id="video-container">
+        <div id="youtube-player">
+
+        </div>
+    </div>
+</section>
 
 @@include('../partials/_footer.html')
