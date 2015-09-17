@@ -1,40 +1,40 @@
-/* line 3, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+/* line 3, C:/Users/roberto.frega/Documents/GitHub/neve/banheiros/dev/css/style.scss */
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   min-height: 555px; }
   @media (max-width: 768px) {
-    /* line 3, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+    /* line 3, C:/Users/roberto.frega/Documents/GitHub/neve/banheiros/dev/css/style.scss */
     html, body {
       min-height: 320px;
       overflow-x: hidden; } }
 
-/* line 14, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+/* line 14, C:/Users/roberto.frega/Documents/GitHub/neve/banheiros/dev/css/style.scss */
 * {
   text-decoration: none; }
 
 /******************************
             UTILS
 ******************************/
-/* line 25, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+/* line 25, C:/Users/roberto.frega/Documents/GitHub/neve/banheiros/dev/css/style.scss */
 .equidistant {
   text-align: justify;
   font-size: 0.1px; }
-  /* line 28, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+  /* line 28, C:/Users/roberto.frega/Documents/GitHub/neve/banheiros/dev/css/style.scss */
   .equidistant:after {
     content: "";
     width: 100%;
     display: inline-block; }
-  /* line 33, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+  /* line 33, C:/Users/roberto.frega/Documents/GitHub/neve/banheiros/dev/css/style.scss */
   .equidistant .equidistant-item {
     display: inline-block;
     text-align: left; }
-  /* line 37, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+  /* line 37, C:/Users/roberto.frega/Documents/GitHub/neve/banheiros/dev/css/style.scss */
   .equidistant * {
     font-size: 14px; }
 
-/* line 42, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+/* line 42, C:/Users/roberto.frega/Documents/GitHub/neve/banheiros/dev/css/style.scss */
 .absolute-middle {
   display: table;
   width: 100%;
@@ -44,12 +44,12 @@ html, body {
   bottom: 0;
   left: 0;
   right: 0; }
-  /* line 51, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+  /* line 51, C:/Users/roberto.frega/Documents/GitHub/neve/banheiros/dev/css/style.scss */
   .absolute-middle .middle-container {
     display: table-cell;
     vertical-align: middle; }
 
-/* line 57, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+/* line 57, C:/Users/roberto.frega/Documents/GitHub/neve/banheiros/dev/css/style.scss */
 .cut-text {
   text-overflow: ellipsis;
   overflow: hidden;
@@ -59,14 +59,14 @@ html, body {
   font-family: primary-font;
   src: url(../font/SinkinSans-300Light.otf); }
 
-/* line 69, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+/* line 69, C:/Users/roberto.frega/Documents/GitHub/neve/banheiros/dev/css/style.scss */
 .neve-font {
   font-family: primary-font; }
 
 /******************************
             HEADER
 ******************************/
-/* line 77, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+/* line 77, C:/Users/roberto.frega/Documents/GitHub/neve/banheiros/dev/css/style.scss */
 .logo-container {
   position: absolute;
   top: 15px;
@@ -80,18 +80,18 @@ html, body {
   background-repeat: no-repeat;
   background-position-x: 0%;
   background-position-y: 0%; }
-  /* line 90, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+  /* line 90, C:/Users/roberto.frega/Documents/GitHub/neve/banheiros/dev/css/style.scss */
   .logo-container img {
     display: none; }
   @media (max-width: 768px) {
-    /* line 77, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+    /* line 77, C:/Users/roberto.frega/Documents/GitHub/neve/banheiros/dev/css/style.scss */
     .logo-container {
       width: 100%;
       height: 40%;
       background-position: 50% 0%;
       left: 0px; } }
 
-/* line 101, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+/* line 101, C:/Users/roberto.frega/Documents/GitHub/neve/banheiros/dev/css/style.scss */
 #top-header {
   z-index: 100;
   height: 35px;
@@ -103,50 +103,49 @@ html, body {
   background-color: rgba(4, 4, 4, 0.9);
   height: 50px; }
   @media (max-width: 768px) {
-    /* line 101, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+    /* line 101, C:/Users/roberto.frega/Documents/GitHub/neve/banheiros/dev/css/style.scss */
     #top-header {
       height: 50px; }
-      /* line 113, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+      /* line 113, C:/Users/roberto.frega/Documents/GitHub/neve/banheiros/dev/css/style.scss */
       #top-header .social-container {
         font-size: 25px; }
-      /* line 116, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+      /* line 116, C:/Users/roberto.frega/Documents/GitHub/neve/banheiros/dev/css/style.scss */
       #top-header a {
         margin-left: 35px; } }
-  /* line 120, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+  /* line 120, C:/Users/roberto.frega/Documents/GitHub/neve/banheiros/dev/css/style.scss */
   #top-header .social-container {
     font-size: 25px;
     text-align: right;
     padding-right: 20px;
     padding-top: 8px; }
-    /* line 122, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+    /* line 122, C:/Users/roberto.frega/Documents/GitHub/neve/banheiros/dev/css/style.scss */
     #top-header .social-container a {
       margin-left: 20px; }
-    /* line 128, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+    /* line 128, C:/Users/roberto.frega/Documents/GitHub/neve/banheiros/dev/css/style.scss */
     #top-header .social-container .icon-facebook, #top-header .social-container .icon-twitter {
       color: #b99742;
       cursor: pointer; }
-    /* line 132, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+    /* line 132, C:/Users/roberto.frega/Documents/GitHub/neve/banheiros/dev/css/style.scss */
     #top-header .social-container .icon-twitter {
       top: 3px;
       position: relative;
       font-size: 95%; }
 
-/* line 147, c:/Users/Felipe/Desktop/NEVE/banheiros/dev/css/style.scss */
+/* line 147, C:/Users/roberto.frega/Documents/GitHub/neve/banheiros/dev/css/style.scss */
 *:focus {
   outline: none; }
 
-/* line 5, stdin */
+/* line 4, stdin */
 #home-section {
   position: relative;
   height: 100%;
-  background-image: url("../images/home/rua-oscar-freire-sao-paulo.png");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover; }
-  /* line 12, stdin */
+  background: url("../images/home/rua-oscar-freire-sao-paulo.png") no-repeat 50% 50%;
+  background-size: cover;
+  overflow: hidden; }
+  /* line 10, stdin */
   #home-section > img {
     display: none; }
-  /* line 16, stdin */
+  /* line 14, stdin */
   #home-section #novidade-breve #text-content {
     height: 118px;
     width: 100%;
@@ -156,81 +155,79 @@ html, body {
     padding-left: 90px;
     padding-top: 5px;
     background-color: rgba(0, 0, 0, 0.75); }
-    /* line 25, stdin */
+    /* line 23, stdin */
     #home-section #novidade-breve #text-content #text-aligner {
       display: inline-block;
       text-align: left;
       margin-left: -570px; }
     @media (max-width: 940px) {
-      /* line 16, stdin */
+      /* line 14, stdin */
       #home-section #novidade-breve #text-content {
         padding-top: 1px; } }
     @media (max-width: 768px) {
-      /* line 16, stdin */
+      /* line 14, stdin */
       #home-section #novidade-breve #text-content {
         height: 108px;
         margin-top: 10px;
         text-align: center; }
-        /* line 37, stdin */
+        /* line 35, stdin */
         #home-section #novidade-breve #text-content #text-aligner {
           width: 310px;
           margin-left: -80px; }
-        /* line 41, stdin */
+        /* line 39, stdin */
         #home-section #novidade-breve #text-content h1 {
           font-size: 20px; }
-        /* line 44, stdin */
+        /* line 42, stdin */
         #home-section #novidade-breve #text-content p {
           font-size: 15px; } }
-  /* line 49, stdin */
+  /* line 47, stdin */
   #home-section #novidade-breve h2 {
     color: #b99742;
     font-size: 23.82px;
     margin-bottom: 10px;
     margin-top: 10px; }
-  /* line 55, stdin */
+  /* line 53, stdin */
   #home-section #novidade-breve p {
     color: #fff;
     font-size: 16.78px;
     line-height: 1.5;
     margin-top: -8px;
     padding-left: 1px; }
-  /* line 63, stdin */
+  /* line 61, stdin */
   #home-section #model-container {
-    background-image: url("../images/home/ingrid-guimaraes-banheiros-espetaculares-neve.png");
+    background: url("../images/home/ingrid-guimaraes-banheiros-espetaculares-neve.png") no-repeat 100% 100%;
     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
     height: 100%;
     width: 55%;
     position: absolute;
     bottom: 0;
     right: 0; }
-    /* line 73, stdin */
+    /* line 69, stdin */
     #home-section #model-container img {
       display: none; }
     @media (max-width: 768px) {
-      /* line 63, stdin */
+      /* line 61, stdin */
       #home-section #model-container {
         background-position: 50% 100%;
         width: 99%;
         height: 40%; } }
-  /* line 82, stdin */
+  /* line 78, stdin */
   #home-section #neve-play {
     text-align: center;
     padding-top: 85px;
     /*@media (max-width : 680px) {
-			font-size: 0.6em;
-	    }
-	    @media (max-width : 630px){
-		    padding-top: 30px;
-		    text-align: right;
-		    padding-right: 10px;
-	    }
-	    @media (max-width : 630px) and (max-height : 370px){
-	    	font-size: 0.5em;
-		    padding-top: 230px;
-	    }*/ }
-    /* line 85, stdin */
+        font-size: 0.6em;
+    }
+    @media (max-width : 630px){
+        padding-top: 30px;
+        text-align: right;
+        padding-right: 10px;
+    }
+    @media (max-width : 630px) and (max-height : 370px){
+        font-size: 0.5em;
+        padding-top: 230px;
+    }*/ }
+    /* line 81, stdin */
     #home-section #neve-play #neve-play-button {
       width: 460px;
       margin-top: -40px;
@@ -238,45 +235,67 @@ html, body {
       z-index: 150;
       position: relative; }
     @media (max-width: 768px) {
-      /* line 82, stdin */
+      /* line 78, stdin */
       #home-section #neve-play {
         /*padding-top: 95px;*/
         font-size: 0.5em;
-        text-align: right;
         padding-right: 30px;
         text-align: center; }
-        /* line 102, stdin */
+        /* line 97, stdin */
         #home-section #neve-play #neve-play-button {
           width: 260px;
           left: 135px;
           top: 15px; }
-        /* line 107, stdin */
+        /* line 102, stdin */
         #home-section #neve-play .icon-radio-checked2 {
           top: -3px !important; } }
-    /* line 123, stdin */
+    /* line 118, stdin */
     #home-section #neve-play span {
       font-size: 9.3em;
       cursor: pointer;
       z-index: 150;
       position: relative; }
-    /* line 129, stdin */
+    /* line 124, stdin */
     #home-section #neve-play .icon-radio-checked2 {
-      color: transparent;
       color: rgba(255, 255, 255, 0.2);
       position: absolute;
       top: -6px; }
-    /* line 135, stdin */
+    /* line 129, stdin */
     #home-section #neve-play .icon-play2 {
       color: white;
       color: white; }
-  /* line 140, stdin */
+  /* line 134, stdin */
   #home-section #circle-shadow {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0; }
-    /* line 146, stdin */
+    /* line 140, stdin */
     #home-section #circle-shadow img {
       width: 100%;
       height: 100%; }
+
+/* line 147, stdin */
+#video-modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999; }
+  /* line 155, stdin */
+  #video-modal a.close {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2em;
+    padding: 1em;
+    font-weight: bolder; }
+
+/* line 166, stdin */
+#video-container {
+  height: 100%;
+  padding: 5em 4em 4em; }
