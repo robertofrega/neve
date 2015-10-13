@@ -47,7 +47,12 @@ html, body {
 
 @font-face {
   font-family: primary-font;
-  src: url(../font/SinkinSans-300Light.otf); }
+  src: url(../font/SinkinSans-300Light.txt); }
+
+@font-face {
+  font-family: s-font;
+  src: url("../font/SinkinSans-400Regular.txt");
+  src: url("../font/SinkinSans-400Regular.txt?#iefix"); }
 
 .neve-font {
   font-family: primary-font; }
@@ -121,44 +126,74 @@ html, body {
   #home-section > img {
     display: none; }
   #home-section #novidade-breve #text-content {
-    height: 118px;
     width: 100%;
     text-align: center;
     vertical-align: middle;
-    margin-top: 60px;
-    padding-left: 90px;
-    padding-top: 5px;
+    margin-top: 140px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 25px;
     background-color: rgba(0, 0, 0, 0.75); }
     #home-section #novidade-breve #text-content #text-aligner {
       display: inline-block;
       text-align: left;
-      margin-left: -570px; }
+      margin-left: -740px;
+      padding-top: 20px;
+      padding-bottom: 20px; }
     @media (max-width: 940px) {
       #home-section #novidade-breve #text-content {
-        padding-top: 1px; } }
+        padding-top: 20px;
+        padding-bottom: 0px; } }
     @media (max-width: 768px) {
       #home-section #novidade-breve #text-content {
-        height: 108px;
+        height: 95px;
         margin-top: 10px;
+        padding-top: 5px;
         text-align: center; }
         #home-section #novidade-breve #text-content #text-aligner {
-          width: 310px;
-          margin-left: -80px; }
+          display: inline-block;
+          text-align: left;
+          margin-left: -170px;
+          padding-top: 0px;
+          padding-bottom: 20px; }
         #home-section #novidade-breve #text-content h1 {
-          font-size: 20px; }
+          color: #b99742;
+          font-weight: bolder;
+          font-size: 11px;
+          margin-bottom: 5px;
+          margin-top: 5px; }
+        #home-section #novidade-breve #text-content h2 {
+          font-size: 12px;
+          color: #b99742;
+          font-weight: normal;
+          margin-bottom: 15px;
+          margin-top: 5px; }
         #home-section #novidade-breve #text-content p {
-          font-size: 15px; } }
+          font-size: 10px;
+          line-height: 0px;
+          margin-top: 13px; } }
   #home-section #novidade-breve h2 {
     color: #b99742;
-    font-size: 23.82px;
+    font-weight: normal;
+    font-size: 24.82px;
     margin-bottom: 10px;
-    margin-top: 10px; }
+    margin-top: 5px; }
+  #home-section #novidade-breve h1 {
+    color: #b99742;
+    font-weight: 900;
+    font-size: 25.82px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    font-family: s-font; }
   #home-section #novidade-breve p {
     color: #fff;
-    font-size: 16.78px;
-    line-height: 1.5;
-    margin-top: -8px;
+    font-size: 14.78px;
+    line-height: 0px;
+    margin-top: 20px;
     padding-left: 1px; }
+  #home-section #novidade-breve h4 {
+    line-height: 2px;
+    margin-top: 40px; }
   #home-section #model-container {
     background: url("../images/home/ingrid-guimaraes-banheiros-espetaculares-neve.png") no-repeat 100% 100%;
     background-size: contain;
@@ -176,7 +211,7 @@ html, body {
         height: 40%; } }
   #home-section #neve-play {
     text-align: center;
-    padding-top: 85px;
+    padding-top: 170px;
     /*@media (max-width : 680px) {
         font-size: 0.6em;
     }
@@ -204,7 +239,7 @@ html, body {
         #home-section #neve-play #neve-play-button {
           width: 260px;
           left: 135px;
-          top: 15px; }
+          top: -65px; }
         #home-section #neve-play .icon-radio-checked2 {
           top: -3px !important; } }
     #home-section #neve-play span {

@@ -47,7 +47,12 @@ html, body {
 
 @font-face {
   font-family: primary-font;
-  src: url(../font/SinkinSans-300Light.otf); }
+  src: url(../font/SinkinSans-300Light.txt); }
+
+@font-face {
+  font-family: s-font;
+  src: url("../font/SinkinSans-400Regular.txt");
+  src: url("../font/SinkinSans-400Regular.txt?#iefix"); }
 
 .neve-font {
   font-family: primary-font; }
