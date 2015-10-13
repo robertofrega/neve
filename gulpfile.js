@@ -25,12 +25,12 @@ var paths = {
   prod: working + 'preview',
   templates: working + 'dev/templates/',
   sass: working + 'dev/css/',
-  css: working + 'preview/css',
+  css: working + 'preview/css'
 };
 
 gulp.task('uglify-js', function() {
   return gulp.src( [
-        paths.prod + '/js/**/*.js',
+        paths.prod + '/js/**/*.js'
 
     ], {'base' : paths.prod })
     .pipe(uglify())
@@ -39,7 +39,7 @@ gulp.task('uglify-js', function() {
 
 gulp.task('minify-css', function() {
   return gulp.src( [
-        paths.prod + '/css/**/*.css',
+        paths.prod + '/css/**/*.css'
 
     ], {'base' : paths.prod })
     .pipe(minifyCss({compatibility: 'ie8'}))
@@ -51,9 +51,9 @@ gulp.task('minify-html', function() {
     conditionals: true,
     spare:true
   };
- 
+
   return gulp.src( [
-        paths.prod + '/**/*.html',
+        paths.prod + '/**/*.html'
 
     ], {'base' : paths.prod })
     .pipe(minifyHTML(opts))
@@ -67,7 +67,7 @@ gulp.task('copy', function(){
         paths.dev + '/js/**/*',
         paths.dev + '/css/**/*.css',
         paths.dev + '/images/**/*',
-        paths.dev + '/*.*',
+        paths.dev + '/*.*'
 
     ], {'base' : paths.dev })
         .pipe(gulp.dest(paths.prod));
@@ -90,7 +90,7 @@ gulp.task('fileinclude', function() {
 //===========================================
 gulp.task('sass', function() {
   return gulp.src(path.join(paths.sass, '*.scss'))
-    .pipe(sass({ style: 'expanded', sourceComments: 'map', errLogToConsole: true}))
+    .pipe(sass())
     .pipe(autoprefixer('last 2 version', "> 1%", 'ie 8', 'ie 9'))
     .pipe(gulp.dest(paths.css))
     .pipe(livereload(server));
@@ -144,5 +144,5 @@ gulp.task('build',['fileinclude', 'sass', 'copy'], function() {
 });
 
 gulp.task('minify-all', ['uglify-js','minify-css','minify-html'], function(){
-  
+
 });
