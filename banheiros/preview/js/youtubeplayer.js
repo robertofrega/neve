@@ -1,5 +1,11 @@
 (function () {
 
+    if (!window.console) {
+        window.console = {
+            log: function () {}
+        }
+    }
+
     var tag = document.createElement('script');
 
     tag.src = "https://www.youtube.com/iframe_api";
@@ -11,14 +17,17 @@
 
     window.onYouTubeIframeAPIReady = function () {
         $(function () {
-            $('#video-modal > a').click(function (e) {
+            $('#video-modal').find('> a').click(function (e) {
+                e.returnValue = false;
                 e.preventDefault();
+
                 $('#video-modal').addClass('hidden');
                 if (typeof window.myGaugePlayer == 'object' && typeof window.myGaugePlayer.stopVideo == 'function') {
                     window.myGaugePlayer.pauseVideo()
                 }
             });
             $('#neve-play').find('a').click(function (e) {
+                e.returnValue = false;
                 e.preventDefault();
                 $('#video-modal').removeClass('hidden');
                 if (typeof window.myGaugePlayer == 'object' && typeof window.myGaugePlayer.playVideo == 'function') {
