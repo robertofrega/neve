@@ -6,6 +6,8 @@
         }
     }
 
+    var yt_video_id = 'nDz-Hu_-l0A';
+
     var tag = document.createElement('script');
 
     tag.src = "https://www.youtube.com/iframe_api";
@@ -41,7 +43,7 @@
                             rel: 0,
                             color: 'white'
                         },
-                        videoId: 'XhVV5lUtlbc',
+                        videoId: yt_video_id,
                         events: {
                             'onStateChange': function (e) {
                                 Gauge.onPlayerStateChange(e);
